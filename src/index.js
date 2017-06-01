@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './homescreen/App';
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
+import './css/main.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <App ondertitel="Dit is nog eens makkelijk starten"/>,
+    document.getElementById('root'));
 registerServiceWorker();
