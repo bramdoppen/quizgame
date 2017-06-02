@@ -19,7 +19,7 @@ class App extends Component {
             {this.props.ondertitel}
           </p>
         </div>
-        <Question text={QUESTIONS[2]} />
+        <Question questions={QUESTIONS[3]} />
       </div>
     );
   }

@@ -4,8 +4,12 @@
   color: #000;
   box-sizing: border-box;
   background-color: #eee;
+  padding: 0 0 30px 0;
 }
 
 .Questions p {
-
+  border: 1px solid #333;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
 }
