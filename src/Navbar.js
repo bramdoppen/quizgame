@@ -9,17 +9,22 @@ class Navigatiebar extends Component {
         return(
             <nav>
                 <h3>Exploding Kittens</h3>
-                <img src={menuPlaatje} alt="menu" />
+                <img src={menuPlaatje} alt="menu" onClick={klapMenuUit} />
             </nav>
         );
     }
+}
+
+function klapMenuUit() {
+    console.log("Clicked");
+    //return <Menu/>;
 }
 
 class Menu extends Component {
     render(){
         return(
             <div className="menu-open">
-
+            <h1>Menu Uitklap</h1>
             </div>
         );
     }

@@ -54,6 +54,8 @@ nav {
     color: white; }
 
 .menu-open {
+  width: 500px;
+  height: 500px;
   background-color: palevioletred; }
 
 /*# sourceMappingURL=main.css.map */
