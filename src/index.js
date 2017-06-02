@@ -6,6 +6,9 @@ import './css/main.css';
 
 ReactDOM.render(
     <App ondertitel="Wauw zo mooi hallo"/>,
-    document.getElementById('root'));
+    document.getElementById('root')
+);
+
 registerServiceWorker();
 
+console.log('Charly rocks');
