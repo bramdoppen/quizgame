@@ -11,4 +11,4 @@ ReactDOM.render(
 
 registerServiceWorker();
 
-console.log("Charly Test");
+console.log("Charly Test 2");
