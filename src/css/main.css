@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh; }
+    height: 350px; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

@@ -1,6 +1,11 @@
-.Textfile {
-  font-family: 'Barrio', cursive;
+.Questions {
   font-style: italic;
   font-size: 1em;
-  color: red;
+  color: #000;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+.Questions p {
+
 }

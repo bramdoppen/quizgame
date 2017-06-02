@@ -5,12 +5,9 @@ import Vraag from './CharlottesComponentje'
 import registerServiceWorker from './registerServiceWorker';
 import './css/main.css';
 
-ReactDOM.render(
-    <App ondertitel="Wauw zo mooi hallo"/>,
-    document.getElementById('root')
-);
+ReactDOM.render(<App />,document.getElementById('root'));
 
-ReactDOM.render(<Vraag/>, document.getElementById('charly') );
+ReactDOM.render(<Vraag />, document.getElementById('charly'));
 
 
 

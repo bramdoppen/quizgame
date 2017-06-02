@@ -4,7 +4,6 @@ import './css/Questions.css';
 class Questions extends Component {
   constructor(props) {
     super(props);
-    this.answers = this.props.text.answers
   }
 
   render() {
