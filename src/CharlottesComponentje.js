@@ -3,7 +3,6 @@
  */
 
 import React, { Component } from 'react';
-import './css/main.css';
 
 
 class Vraag extends Component {
@@ -11,9 +10,11 @@ class Vraag extends Component {
         return(
             <div>
                 <h2>Heb jij House M.D. gezien?</h2>
+                <div className="charly"><p>WERK</p></div>
             </div>
         );
     }
 }
+
 
 export default Vraag;

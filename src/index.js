@@ -4,11 +4,16 @@ import App from './homescreen/App';
 import Vraag from './CharlottesComponentje'
 import registerServiceWorker from './registerServiceWorker';
 import './css/main.css';
+import Navigatiebar from "./Navbar";
 
-ReactDOM.render(<App />,document.getElementById('root'));
+let alleComponenten = (
+    <div>
+        <App />
+        <Vraag />
+        <Navigatiebar />
+    </div>
+);
 
-ReactDOM.render(<Vraag />, document.getElementById('charly'));
-
-
+ReactDOM.render(alleComponenten, document.getElementById("root"));
 
 registerServiceWorker();
