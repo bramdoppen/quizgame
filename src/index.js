@@ -5,10 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './css/main.css';
 
 ReactDOM.render(
-    <App ondertitel="Dit is nog eens makkelijk starten"/>,
-    document.getElementById('root')
-);
-
+    <App ondertitel="Wauw zo mooi hallo"/>,
+    document.getElementById('root'));
 registerServiceWorker();
 
-console.log("Charly Test 2");
