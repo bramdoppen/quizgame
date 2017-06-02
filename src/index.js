@@ -5,7 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './css/main.css';
 
 ReactDOM.render(
-    <App ondertitel="Wauw zo mooi"/>,
+    <App ondertitel="Wauw zo mooi hallo"/>,
     document.getElementById('root'));
 registerServiceWorker();
 
