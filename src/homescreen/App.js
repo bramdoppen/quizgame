@@ -8,7 +8,7 @@ class App extends Component {
           <div>
             <div className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
-              <h2>Hallo teamgenootjes</h2>
+              <h2>Hallo teamgenootjessssss</h2>
             </div>
             <p className="App-intro">
                 {this.props.ondertitel}
