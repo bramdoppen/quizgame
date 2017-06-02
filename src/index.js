@@ -6,5 +6,9 @@ import './css/main.css';
 
 ReactDOM.render(
     <App ondertitel="Dit is nog eens makkelijk starten"/>,
-    document.getElementById('root'));
+    document.getElementById('root')
+);
+
 registerServiceWorker();
+
+console.log("Charly Test");
