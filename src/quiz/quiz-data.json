@@ -1,4 +1,4 @@
-export const questions = [
+[
   {
     "question": "Which of the following is true about reflows and repaints?",
     "answers": [

@@ -1,62 +1,60 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './css/Questions.css';
 import Answer from './Answer';
 
 class Questions extends Component {
-  // constructor(props) {
-  //   super(props);
-  // },
+  static get propTypes() {
+    return {
+      data: PropTypes.array.isRequired,
+    };
+  }
 
-  handleUserAnswer (answer) {
-    console.log(answer);
-    if (true){
-      alert('is goed')
-    }else{
-      alert('IS FOUT')
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentQuestion: 2,
+    };
+
+    this.handleUserAnswer = this.handleUserAnswer.bind(this);
+  }
+
+  handleUserAnswer(event) {
+    if (event.currentTarget === event.target) {
+      return;
+    }
+
+    const currentQuestion = this.props.data[this.state.currentQuestion];
+
+    if (+event.target.dataset.answerNumber === currentQuestion.correct) {
+      console.log('🎆 Correct! 🎆');
+    } else {
+      console.log('🚫 Incorrect... 🚫');
     }
   }
 
-//   render() {
-//     console.log(this.props.questions);
-//     return (
-//       <div className= 'Questions'>
-//         <h1>{this.props.questions.question}</h1>
-//         <p onClick={this.handleUserAnswer}>{this.props.questions.answers[0]}</p>
-//         <p>{this.props.questions.answers[1]}</p>
-//         <p>{this.props.questions.answers[2]}</p>
-//         <p>{this.props.questions.answers[3]}</p>
-//       </div>
-//     );
-//   }
-// }
+  render() {
+    const currentQuestion = this.props.data[this.state.currentQuestion];
 
-render() {
-    console.log(this.props.questions);
     return (
-      <div className= 'Questions'>
-        <h1>{this.props.questions.question}</h1>
-        <ol className="question-answers">
-          {this.props.questions.answers.map(answer => {
-            return (
-              <Answer
-                key={answer}
-                answer={answer}
-              />
-            );
-          })}
-        </ol>
+      <div className='Questions'>
+        <h1>{currentQuestion.question}</h1>
+        <ul
+          data-question-number={this.state.currentQuestion}
+          onClick={this.handleUserAnswer}>
+            {currentQuestion.answers.map((answer, i) => {
+              return (
+                <Answer
+                  key={i} number={i}
+                  answer={answer}
+                />
+              );
+            })}
+        </ul>
       </div>
     );
   }
 }
 
-
-
-
-
-
-
-
-
 export default Questions;
-

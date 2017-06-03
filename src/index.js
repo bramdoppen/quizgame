@@ -1,19 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './homescreen/App';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './css/main.css';
-import Navigatiebar from "./Navbar";
+
+ReactDOM.render(<App />, document.getElementById("root"));
 
 registerServiceWorker();
-
-let alleComponenten = (
-    <div>
-        <App />
-        <Navigatiebar />
-    </div>
-);
-
-ReactDOM.render(alleComponenten, document.getElementById("root"));
-
-

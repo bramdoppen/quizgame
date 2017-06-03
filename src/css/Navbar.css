@@ -1,0 +1,28 @@
+.Navbar {
+  display: block;
+  background-color: #4C6578;
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.Navbar img {
+  float: right;
+  display: inline-block;
+  margin-right: 3%;
+  margin-top: -25px;
+}
+
+.Navbar h3 {
+  margin: 8px;
+  padding: 0;
+  color: white;
+}
+
+.Navbar .menu-open {
+  background-color: palevioletred;
+}
