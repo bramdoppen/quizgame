@@ -43,14 +43,12 @@ class Questions extends Component {
         <ul
           data-question-number={this.state.currentQuestion}
           onClick={this.handleUserAnswer}>
-            {currentQuestion.answers.map((answer, i) => {
-              return (
-                <Answer
-                  key={i} number={i}
-                  answer={answer}
-                />
-              );
-            })}
+            {currentQuestion.answers.map((answer, i) =>
+              <Answer
+                key={i} number={i}
+                answer={answer}
+              />
+            )}
         </ul>
       </div>
     );
