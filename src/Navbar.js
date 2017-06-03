@@ -10,20 +10,25 @@ class Navbar extends Component {
     return (
       <nav className="Navbar">
         <h3>Exploding Kittens</h3>
-        <img src={menuPlaatje} alt="menu" />
+        <img src={menuPlaatje} alt="menu" onClick={klapMenuUit} />
       </nav>
     );
   }
 }
 
-// class Menu extends Component {
-//     render(){
-//         return(
-//             <div className="menu-open">
+function klapMenuUit() {
+    console.log("Clicked");
+    //return <Menu/>;
+}
 
-//             </div>
-//         );
-//     }
-// }
+class Menu extends Component {
+    render(){
+        return(
+            <div className="menu-open">
+                <h1>Menu Uitklap</h1>
+            </div>
+        );
+    }
+}
 
 export default Navbar;
