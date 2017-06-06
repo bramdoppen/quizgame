@@ -22,25 +22,25 @@ class Questions extends Component {
 
   handleUserAnswer(answerNumber, questionNumber) {
 
-    const currentQuestion = this.props.data[this.state.currentQuestion];
+    const currentNumberQuestion = this.state.currentQuestion;
+    const currentQuestion = this.props.data[currentNumberQuestion];
 
     if (answerNumber === currentQuestion.correct) {
       console.log('🎆 Correct! 🎆');
-      var nummer = questionNumber + 1;
-      this.setState({currentQuestion: nummer});
+      const number = questionNumber + 1;
+      this.setState({currentQuestion: number});
     } else {
       console.log('🚫 Incorrect... 🚫');
     }
   }
 
   render() {
-    const currentQuestion = this.props.data[this.state.currentQuestion];
-
+    const currentNumberQuestion = this.state.currentQuestion;
+    const currentQuestion = this.props.data[currentNumberQuestion];
     return (
       <div className='Questions'>
         <h1>{currentQuestion.question}</h1>
-        <ul
-          data-question-number={this.state.currentQuestion}>
+        <ul>
             {currentQuestion.answers.map((answer, i) =>
               <Answer
                 key={i}
