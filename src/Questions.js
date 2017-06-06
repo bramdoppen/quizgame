@@ -14,21 +14,20 @@ class Questions extends Component {
     super(props);
 
     this.state = {
-      currentQuestion: 2,
+      currentQuestion: 0,
     };
 
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
   }
 
-  handleUserAnswer(event) {
-    if (event.currentTarget === event.target) {
-      return;
-    }
+  handleUserAnswer(answerNumber, questionNumber) {
 
     const currentQuestion = this.props.data[this.state.currentQuestion];
 
-    if (+event.target.dataset.answerNumber === currentQuestion.correct) {
+    if (answerNumber === currentQuestion.correct) {
       console.log('🎆 Correct! 🎆');
+      var nummer = questionNumber + 1;
+      this.setState({currentQuestion: nummer});
     } else {
       console.log('🚫 Incorrect... 🚫');
     }
@@ -41,12 +40,14 @@ class Questions extends Component {
       <div className='Questions'>
         <h1>{currentQuestion.question}</h1>
         <ul
-          data-question-number={this.state.currentQuestion}
-          onClick={this.handleUserAnswer}>
+          data-question-number={this.state.currentQuestion}>
             {currentQuestion.answers.map((answer, i) =>
               <Answer
-                key={i} number={i}
+                key={i}
+                number={i}
                 answer={answer}
+                answerClicked={this.handleUserAnswer}
+                currentQuestion= {this.state.currentQuestion}
               />
             )}
         </ul>

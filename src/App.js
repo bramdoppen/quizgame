@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './css/App.css';
 import Navbar from "./Navbar";
 import Questions from './Questions';
+
+//json
 import questionsData from './quiz/quiz-data.json';
 
 class App extends Component {
