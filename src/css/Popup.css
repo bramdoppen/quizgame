@@ -1,0 +1,16 @@
+.Popup h2 {
+  font-size: 2em;
+}
+
+.Popup p {
+  border: 1px solid #333;
+  width: 80%;
+  margin: 16px auto;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #ddd;
+}
