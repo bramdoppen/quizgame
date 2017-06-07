@@ -1,4 +1,8 @@
-.Answer {
+.Popup h2 {
+  font-size: 2em;
+}
+
+.Popup p {
   border: 1px solid #333;
   width: 80%;
   margin: 16px auto;
@@ -9,15 +13,4 @@
   -ms-user-select: none;
   user-select: none;
   background-color: #ddd;
-}
-
-.Answer:hover{
-  background-color: #555;
-  color: #FFF;
-}
-
-
-.Answer:active{
-  background-color: #333;
-  color: #FFF;
 }

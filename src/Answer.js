@@ -18,6 +18,7 @@ class Answer extends Component {
   }
 
   render() {
+
     const handleClick = this.handleClick.bind(this);
 
     return (

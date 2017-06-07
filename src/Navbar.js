@@ -21,14 +21,14 @@ function klapMenuUit() {
     //return <Menu/>;
 }
 
-class Menu extends Component {
-    render(){
-        return(
-            <div className="menu-open">
-                <h1>Menu Uitklap</h1>
-            </div>
-        );
-    }
-}
+// class Menu extends Component {
+//     render(){
+//         return(
+//             <div className="menu-open">
+//                 <h1>Menu Uitklap</h1>
+//             </div>
+//         );
+//     }
+// }
 
 export default Navbar;
