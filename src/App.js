@@ -14,8 +14,8 @@ class App extends Component {
         <Navbar />
         <div className="App-container">
           <h1>Welcome to Quiz Game!</h1>
-          {/*<Questions data={questionsData} />*/}
-          <Afbeeldingen data={questionsData} />
+          <Questions data={questionsData} />
+          {/*<Afbeeldingen data={questionsData} />*/}
         </div>
       </div>
     );
