@@ -41,8 +41,6 @@ class Questions extends Component {
   }
 
   closePopup() {
-    const currentNumberQuestion = this.state.currentQuestion;
-    const currentQuestion = this.props.data[currentNumberQuestion];
     const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType
 
     const number = this.state.currentQuestion + 1;
@@ -54,36 +52,42 @@ class Questions extends Component {
     let renderQuestionType;
 
     switch(this.state.questionType) {
-        case "MC":
-            renderQuestionType = <MultipleChoiceQuestion
-                                    data={this.props.data}
-                                    handleUserAnswer={this.handleUserAnswer}
-                                    questionNumber={this.state.currentQuestion} />
-            break;
-        case "IMG":
-            renderQuestionType = <Afbeeldingen
-                                    data={this.props.data}
-                                    handleUserAnswer={this.handleUserAnswer}
-                                    questionNumber={this.state.currentQuestion} />
-            break;
+      case "MC":
+        renderQuestionType = (
+          <MultipleChoiceQuestion
+            data={this.props.data}
+            handleUserAnswer={this.handleUserAnswer}
+            questionNumber={this.state.currentQuestion} />
+        );
+        break;
+      case "IMG":
+        renderQuestionType = (
+          <Afbeeldingen
+            data={this.props.data}
+            handleUserAnswer={this.handleUserAnswer}
+            questionNumber={this.state.currentQuestion} />
+        );
+        break;
+      default:
+        console.error(`Invalid questionType: ${this.state.questionType}`);
+        break;
     }
 
-      if (!this.state.answerGiven) {
-          return (
-              <div className='Questions'>
-                  {renderQuestionType}
-              </div>
-          );
+    if (!this.state.answerGiven) {
 
-      }else{
-          return (
-              <div className='Questions'>
-                  <Popup
-                      answerClicked={this.closePopup}
-                  />
-              </div>
-          );
-      }
+      return (
+        <div className='Questions'>
+          {renderQuestionType}
+        </div>
+      );
+    } else {
+
+      return (
+        <div className='Questions'>
+          <Popup answerClicked={this.closePopup} />
+        </div>
+      );
+    }
   }
 }
 

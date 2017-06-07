@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './css/App.css';
 import Navbar from "./Navbar";
-import Afbeeldingen from "./Afbeeldingen.js"
 import Questions from './Questions';
 import Tijdlijn from "./Tijdlijn";
 
@@ -13,16 +12,14 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-          <Tijdlijn/>
+        <Tijdlijn />
         <div className="App-container">
           <h1>Welcome to Quiz Game!</h1>
           <Questions data={questionsData} />
-          {/*<Afbeeldingen data={questionsData} />*/}
         </div>
       </div>
     );
   }
 }
-
 
 export default App;
