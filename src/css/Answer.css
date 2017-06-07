@@ -12,6 +12,12 @@
 }
 
 .Answer:hover{
+  background-color: #555;
+  color: #FFF;
+}
+
+
+.Answer:active{
   background-color: #333;
   color: #FFF;
 }

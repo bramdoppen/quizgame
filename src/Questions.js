@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './css/Questions.css';
-import Answer from './Answer';
+import Answer from './Answer.js';
 
 class Questions extends Component {
   static get propTypes() {
@@ -19,6 +19,7 @@ class Questions extends Component {
 
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
   }
+
 
   handleUserAnswer(answerNumber, questionNumber) {
 
