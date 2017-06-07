@@ -7,7 +7,8 @@
       "Reflows compute layout, are more performance critical, and occur when elements are inserted, removed, moved, animated, etc.",
       "The previous two answers are correct."
     ],
-    "correct": 3
+    "correct": 3,
+    "questionType": "MC"
   },
   {
     "question": "What are the three types of JavaScript errors?",
@@ -17,7 +18,8 @@
       "Syntax Errors, Logic Errors and Loading Errors.",
       "Bad Errors, Very Bad Errors, and Fatal Errors."
     ],
-    "correct": 1
+    "correct": 1,
+    "questionType": "MC"
   },
   {
     "question": "What is a closure?",
@@ -27,7 +29,8 @@
       "An outer function that returns an inner function that's bound to the outer function's environment.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "questionType": "IMG"
   },
   {
     "question": "Where might you use a closure in JavaScript?",
