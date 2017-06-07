@@ -15,8 +15,7 @@ class Questions extends Component {
   constructor(props) {
     super(props);
 
-    const currentQuestion = this.props.data[0];
-    const questionType = currentQuestion.questionType
+    const questionType = this.props.data[0].questionType;
 
     this.state = {
       currentQuestion: 0,
@@ -35,8 +34,6 @@ class Questions extends Component {
 
     if (answerNumber === currentQuestion.correct) {
       console.log('🎆 Correct! 🎆');
-      // const number = questionNumber + 1;
-      // this.setState({currentQuestion: number});
       this.setState({answerGiven: true});
     } else {
       console.log('🚫 Incorrect... 🚫');
