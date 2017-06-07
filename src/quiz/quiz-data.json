@@ -76,7 +76,7 @@
     "question": "What is a promise?",
     "answers": [
       "An object that represents a possible future value.",
-      "An object that's used for deferred and asynchronous computations.",
+      "An object used for deferred and asynchronous computations.",
       "A proxy for a value that will eventually become available.",
       "All of the above."
     ],
@@ -279,7 +279,7 @@
       "https://isas.han.nl/imageloader.aspx?path=2&id=520636&Def=NoPictureMalePort.gif",
       "https://i1.rgstatic.net/ii/profile.image/AS%3A285316163358720%401445036082410_l/Robert_Holwerda.png",
       "https://isas.han.nl/imageloader.aspx?path=2&id=170022&Def=NoPictureFemalePort.gif"
-],
+    ],
     "correct": 2
   },
   {

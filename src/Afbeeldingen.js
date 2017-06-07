@@ -16,29 +16,15 @@ class Afbeeldingen extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            currentQuestion: 27,
-        };
-        this.handleUserAnswer = this.handleUserAnswer.bind(this);
+        this.handleUserAnswerToQuestion = this.handleUserAnswerToQuestion.bind(this);
     }
 
-    handleUserAnswer(answerNumber, questionNumber) {
-
-        const currentNumberQuestion = this.state.currentQuestion;
-        const currentQuestion = this.props.data[currentNumberQuestion];
-
-        if (answerNumber === currentQuestion.correct) {
-            console.log('🎆 Correct! 🎆');
-            const number = questionNumber + 1;
-            this.setState({currentQuestion: number});
-        } else {
-            console.log('🚫 Incorrect... 🚫');
-        }
+    handleUserAnswerToQuestion(answerNumber, questionNumber) {
+        this.props.handleUserAnswer(answerNumber, questionNumber);
     }
 
     render() {
-      const currentNumberQuestion = this.state.currentQuestion;
-      const currentQuestion = this.props.data[currentNumberQuestion];
+      const currentQuestion = this.props.data[this.props.questionNumber];
 
       return (
           <div className= 'Afbeeldingen'>
@@ -48,8 +34,8 @@ class Afbeeldingen extends Component {
                 key={i}
                 number={i}
                 plaatje={answer}
-                answerClicked={this.handleUserAnswer}
-                currentQuestion= {this.state.currentQuestion}
+                answerClicked={this.handleUserAnswerToQuestion}
+                currentQuestion= {this.props.questionNumber}
                 />
               )}
           </div>

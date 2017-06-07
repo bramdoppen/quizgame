@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './css/Questions.css';
 import MultipleChoiceQuestion from './MultipleChoiceQuestion';
 import Popup from './Popup.js';
+import Afbeeldingen from "./Afbeeldingen.js"
 
 class Questions extends Component {
   static get propTypes() {
@@ -31,7 +32,6 @@ class Questions extends Component {
 
     const currentNumberQuestion = this.state.currentQuestion;
     const currentQuestion = this.props.data[currentNumberQuestion];
-    const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType
 
     if (answerNumber === currentQuestion.correct) {
       console.log('🎆 Correct! 🎆');
@@ -64,7 +64,10 @@ class Questions extends Component {
                                     questionNumber={this.state.currentQuestion} />
             break;
         case "IMG":
-            renderQuestionType = console.log("image vraag")
+            renderQuestionType = <Afbeeldingen
+                                    data={this.props.data}
+                                    handleUserAnswer={this.handleUserAnswer}
+                                    questionNumber={this.state.currentQuestion} />
             break;
     }
 
