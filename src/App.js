@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import './css/App.css';
+// import './css/App.css';
 import Navbar from "./Navbar";
 import Questions from './Questions';
+import DragDrop from './DragDrop';
+
 import Tijdlijn from "./Tijdlijn";
 
 //json
@@ -16,6 +18,7 @@ class App extends Component {
         <div className="App-container">
           <h1>Welcome to Quiz Game!</h1>
           <Questions data={questionsData} />
+          <DragDrop data={questionsData} whichArray="22" />
         </div>
       </div>
     );
