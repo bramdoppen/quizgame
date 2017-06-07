@@ -34,4 +34,5 @@ class AfbeeldingenRenderen extends Component {
     }
 }
 
+
 export default AfbeeldingenRenderen;
