@@ -1,0 +1,11 @@
+.Tijdlijn {
+  flex: 0 1 15%;
+  width: 15%;
+  height: calc(100% - 64px);
+  max-height: 300px;
+  margin: 32px;
+  padding: 16px;
+  background-color: #4C6578;
+  color: #eeeeee; }
+
+/*# sourceMappingURL=Tijdlijn.css.map */

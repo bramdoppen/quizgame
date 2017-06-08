@@ -40,13 +40,13 @@ class DragDrop extends Component {
                 </h1>
                 <ul className="draggable-list">{draggable}</ul>
             </div>
-        )
+        );
     }
     onDragEnter() {
-        this.setState({ hovering : true })
+        this.setState({ hovering : true });
     }
     onDragLeave() {
-        this.setState({ hovering : false })
+        this.setState({ hovering : false });
     }
     onDrop(e) {
         this.setState({ hovering : false, dropped : e.answer });
@@ -54,17 +54,17 @@ class DragDrop extends Component {
         this.props.handleUserAnswer(this.translateAnswer(e.answer));
     }
     translateAnswer(answer){
-      const antwoorden = this.props.data.answers
-      const hoeveelheidAntwoorden = antwoorden.length
+      const antwoorden = this.props.data.answers;
+      const hoeveelheidAntwoorden = antwoorden.length;
       let echteAntwoordNummer;
 
-      for(let antwoordTeller = 0; antwoordTeller <= hoeveelheidAntwoorden; antwoordTeller ++){
-        if(answer === antwoorden[antwoordTeller]){
+      for (let antwoordTeller = 0; antwoordTeller <= hoeveelheidAntwoorden; antwoordTeller++) {
+        if (answer === antwoorden[antwoordTeller]) {
           echteAntwoordNummer = antwoordTeller;
         }
       }
 
-      return echteAntwoordNummer
+      return echteAntwoordNummer;
     }
 }
 

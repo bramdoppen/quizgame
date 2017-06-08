@@ -1,11 +1,8 @@
 .Questions {
+  flex: 1 0;
   font-style: italic;
   font-size: 1.2em;
-  color: #000;
-  box-sizing: border-box;
-  background-color: #eee;
-  padding: 0 0 30px 0;
-  margin-top: 10vh; }
+  color: #000; }
   .Questions ul {
     list-style-type: none;
     padding: 0; }
@@ -13,7 +10,6 @@
     margin: 0 auto;
     width: 80%;
     font-size: 1.5em;
-    padding-top: 4vh;
-    padding-bottom: 4vh; }
+    padding: 16px 0; }
 
 /*# sourceMappingURL=Questions.css.map */

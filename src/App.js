@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './css/App.css';
 import Navbar from "./Navbar";
 
 import BodyWrapper from "./BodyWrapper.js";
@@ -12,8 +13,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-          <div className="App-container">
-            {/*<h1>Welcome to Quiz Game!</h1>*/}
+        <div className="App-container">
+          {/*<h1>Welcome to Quiz Game!</h1>*/}
           <BodyWrapper data={questionsData}/>
         </div>
       </div>

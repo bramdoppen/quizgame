@@ -16,36 +16,22 @@ class Navbar extends Component {
             menu.style.display = 'none';
         } else {
             menu.style.display = 'block';
-            console.log("open");
         }
-    }
-
-    geefKleur(){
-        let button = document.querySelector('.hamburger-btn');
-        button.style.backgroundColor = 'pink';
-    }
-    kleurWeg(){
-        let button = document.querySelector('.hamburger-btn');
-        button.style.backgroundColor = '';
     }
 
     render() {
         return (
-            <div>
-                <nav className="Navbar">
-                    <h3>Don't let him die!</h3>
-                    <img src={menuPlaatje}
-                         alt="menu button"
-                         onClick={this.menuutje}
-                         onMouseOver={this.geefKleur}
-                         onMouseLeave={this.kleurWeg}
-                         className="hamburger-btn"
-                    />
-                </nav>
+            <nav className="Navbar">
+                <h2>Don't let him die!</h2>
+                <img src={menuPlaatje}
+                     alt="menu button"
+                     onClick={this.menuutje}
+                     className="hamburger-btn"
+                />
                 <div className="menu-open">
                     <h1>It's all on you, o yes</h1>
                 </div>
-            </div>
+            </nav>
         );
     }
 
