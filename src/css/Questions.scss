@@ -5,15 +5,19 @@
   box-sizing: border-box;
   background-color: #eee;
   padding: 0 0 30px 0;
-  margin-top: 10vh; }
-  .Questions ul {
+  margin-top: 10vh;
+
+  ul{
     list-style-type: none;
-    padding: 0; }
-  .Questions h1 {
+    padding: 0;
+  }
+
+  h1 {
     margin: 0 auto;
     width: 80%;
     font-size: 1.5em;
     padding-top: 4vh;
-    padding-bottom: 4vh; }
+    padding-bottom: 4vh;
+  }
 
-/*# sourceMappingURL=Questions.css.map */
+}

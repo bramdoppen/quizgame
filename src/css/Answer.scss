@@ -1,7 +1,4 @@
-.Popup h2 {
-  font-size: 2em; }
-
-.Popup p {
+.Answer {
   border: 1px solid #333;
   width: 80%;
   margin: 16px auto;
@@ -11,6 +8,14 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ddd; }
+  background-color: #ddd;
 
-/*# sourceMappingURL=Popup.css.map */
+  &:hover{
+    background-color: #555;
+    color: #FFF;
+  }
+  &:hover{
+    background-color: #333;
+    color: #FFF;
+  }
+}

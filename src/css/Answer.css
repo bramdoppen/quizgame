@@ -8,16 +8,12 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ddd;
-}
+  background-color: #ddd; }
+  .Answer:hover {
+    background-color: #555;
+    color: #FFF; }
+  .Answer:hover {
+    background-color: #333;
+    color: #FFF; }
 
-.Answer:hover{
-  background-color: #555;
-  color: #FFF;
-}
-
-
-.Answer:active{
-  background-color: #333;
-  color: #FFF;
-}
+/*# sourceMappingURL=Answer.css.map */
