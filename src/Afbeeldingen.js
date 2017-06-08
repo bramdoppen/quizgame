@@ -1,45 +1,35 @@
-/**
- * Created by Ab on 06-06-17.
- */
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import AfbeeldingenRenderen from './AfbeeldingenRenderen.js'
 import './css/Afbeeldingen.css';
 
 class Afbeeldingen extends Component {
-    static get propTypes() {
-        return {
-            data: PropTypes.array.isRequired,
-        };
-    }
+  constructor(props) {
+    super(props);
 
-    constructor(props) {
-        super(props);
+    this.handleUserAnswerToQuestion = this.handleUserAnswerToQuestion.bind(this);
+  }
 
-        this.handleUserAnswerToQuestion = this.handleUserAnswerToQuestion.bind(this);
-    }
+  handleUserAnswerToQuestion(answerNumber, questionNumber) {
+    this.props.handleUserAnswer(answerNumber, questionNumber);
+  }
 
-    handleUserAnswerToQuestion(answerNumber, questionNumber) {
-        this.props.handleUserAnswer(answerNumber, questionNumber);
-    }
+  render() {
+    const currentQuestion = this.props.data;
 
-    render() {
-      const currentQuestion = this.props.data[this.props.questionNumber];
-
-      return (
-          <div className= 'Afbeeldingen'>
-            <h1>{currentQuestion.question}</h1>
-              {currentQuestion.answers.map((answer, i) =>
-              <AfbeeldingenRenderen
-                key={i}
-                number={i}
-                plaatje={answer}
-                answerClicked={this.handleUserAnswerToQuestion}
-                currentQuestion= {this.props.questionNumber}
-                />
-              )}
-          </div>
-      );
+    return (
+      <div className= 'Afbeeldingen'>
+        <h1>{currentQuestion.question}</h1>
+          {currentQuestion.answers.map((answer, i) =>
+          <AfbeeldingenRenderen
+            key={i}
+            number={i}
+            plaatje={answer}
+            answerClicked={this.handleUserAnswerToQuestion}
+            currentQuestion= {this.props.questionNumber}
+            />
+          )}
+      </div>
+    );
   }
 }
 

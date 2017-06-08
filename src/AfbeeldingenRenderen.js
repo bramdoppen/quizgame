@@ -1,10 +1,6 @@
-/**
- * Created by Ab on 06-06-17.
- */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './css/AfbeeldingenRenderen.css';
-
 
 class AfbeeldingenRenderen extends Component {
 

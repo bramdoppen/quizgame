@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './css/App.css';
 import Navbar from "./Navbar";
-import Questions from './Questions';
-import Tijdlijn from "./Tijdlijn";
+import BodyWrapper from "./BodyWrapper.js";
 
 //json
 import questionsData from './quiz/quiz-data.json';
@@ -12,10 +11,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Tijdlijn />
         <div className="App-container">
-          <h1>Welcome to Quiz Game!</h1>
-          <Questions data={questionsData} />
+          <BodyWrapper data={questionsData}/>
         </div>
       </div>
     );

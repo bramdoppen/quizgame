@@ -7,9 +7,7 @@ class Answer extends Component {
   static get propTypes() {
     return {
       number: PropTypes.number.isRequired,
-      answer: PropTypes.string.isRequired,
       answerClicked: PropTypes.func,
-      currentQuestion: PropTypes.number.isRequired,
     };
   }
 
