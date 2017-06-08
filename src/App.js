@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 // import './css/App.css';
 
 import BodyWrapper from "./BodyWrapper.js";
-import Questions from './Questions';
-import DragDrop from './DragDrop';
 // import SortableComponent from './Reorder';
 import Navbar from'./Navbar.js';
 
