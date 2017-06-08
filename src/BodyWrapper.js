@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Questions from './Questions';
 import Tijdlijn from "./Tijdlijn";
-// import SortableComponent from './Reorder';
-
+import './css/BodyWrapper.css';
 
 class BodyWrapper extends Component {
   static get propTypes() {
@@ -11,8 +10,6 @@ class BodyWrapper extends Component {
       data: PropTypes.array.isRequired,
     };
   }
-
-//----------
 
  constructor(props) {
     super(props);
@@ -40,7 +37,6 @@ class BodyWrapper extends Component {
 
     if (answerNumber === currentQuestion.correct) {
       console.log('🎆 Correct! 🎆');
-      console.log(givenAnswers);
       this.setState({answerGiven: true, answer: givenAnswers});
     } else {
       console.log('🚫 Incorrect... 🚫');
@@ -53,15 +49,11 @@ class BodyWrapper extends Component {
     this.setState({answerGiven: false, currentQuestion: number, questionType: nextQuestionType});
   }
 
-//----------
-
-
   handleClick(event) {
     this.props.answerClicked(this.props.number , this.props.currentQuestion)
   }
 
   render() {
-    console.log(this.state.answer);
     return (
       <div className="BodyWrapper">
         <Tijdlijn
@@ -71,7 +63,8 @@ class BodyWrapper extends Component {
           data={this.props.data[this.state.currentQuestion]}
           stateSwitch={this.state.answerGiven}
           handleUserAnswer={this.handleUserAnswer}
-          closePopup={this.closePopup} />
+          closePopup={this.closePopup}
+        />
       </div>
     );
   }
