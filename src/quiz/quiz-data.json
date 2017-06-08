@@ -33,6 +33,17 @@
     "questionType": "IMG"
   },
   {
+    "question": "In React, what method is used to change state?",
+    "answers": [
+      "changeState()",
+      "onChange()",
+      "setState()",
+      "stateSet()"
+    ],
+    "correct": 2,
+    "questionType": "DD"
+  },
+  {
     "question": "Where might you use a closure in JavaScript?",
     "answers": [
       "When currying or implementing partial application.",
