@@ -12,7 +12,7 @@ class Answer extends Component {
   }
 
   handleClick(event) {
-    this.props.answerClicked(this.props.number , this.props.currentQuestion)
+    this.props.answerClicked(this.props.number)
   }
 
   render() {

@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import './css/App.css';
-import Navbar from "./Navbar";
+// import './css/App.css';
+
 import BodyWrapper from "./BodyWrapper.js";
+import Questions from './Questions';
+import DragDrop from './DragDrop';
+// import SortableComponent from './Reorder';
+import Navbar from'./Navbar.js';
 
 //json
 import questionsData from './quiz/quiz-data.json';

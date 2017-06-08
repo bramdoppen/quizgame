@@ -1,0 +1,27 @@
+.Sortable{
+  width: 80%;
+  margin: auto;
+}
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+
+li {
+  border: 1px solid #333;
+  width: 100%;
+  margin: 16px 0;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #ddd;
+  list-style-type: none;
+  text-align: center;
+  box-sizing:border-box;
+}

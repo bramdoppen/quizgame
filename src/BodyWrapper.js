@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Questions from './Questions';
 import Tijdlijn from "./Tijdlijn";
 import './css/BodyWrapper.css';
+// import SortableComponent from './Reorder';
 
 
 class BodyWrapper extends Component {
@@ -23,28 +24,32 @@ class BodyWrapper extends Component {
       currentQuestion: 0,
       questionType: questionType,
       answerGiven: false,
+      answerNummer: 0,
+      answer: "meep",
+
     };
 
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
     this.closePopup = this.closePopup.bind(this);
   }
 
-  handleUserAnswer(answerNumber, questionNumber) {
+  handleUserAnswer(answerNumber) {
 
     const currentNumberQuestion = this.state.currentQuestion;
     const currentQuestion = this.props.data[currentNumberQuestion];
+    const givenAnswers = currentQuestion.answers[answerNumber];
 
     if (answerNumber === currentQuestion.correct) {
       console.log('🎆 Correct! 🎆');
-      this.setState({answerGiven: true});
+      console.log(givenAnswers);
+      this.setState({answerGiven: true, answer: givenAnswers});
     } else {
       console.log('🚫 Incorrect... 🚫');
     }
   }
 
   closePopup() {
-    const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType
-
+    const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType;
     const number = this.state.currentQuestion + 1;
     this.setState({answerGiven: false, currentQuestion: number, questionType: nextQuestionType});
   }
@@ -57,14 +62,17 @@ class BodyWrapper extends Component {
   }
 
   render() {
+    console.log(this.state.answer);
     return (
       <div className="BodyWrapper">
-        <Tijdlijn />
+        <Tijdlijn
+          answer={this.state.answer}
+        />
         <Questions
-        data={this.props.data[this.state.currentQuestion]}
-        stateSwitch={this.state.answerGiven}
-        handleUserAnswer={this.handleUserAnswer}
-        closePopup={this.closePopup} />
+          data={this.props.data[this.state.currentQuestion]}
+          stateSwitch={this.state.answerGiven}
+          handleUserAnswer={this.handleUserAnswer}
+          closePopup={this.closePopup} />
       </div>
     );
   }

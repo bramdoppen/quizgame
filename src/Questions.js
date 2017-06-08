@@ -6,6 +6,7 @@ import Popup from './Popup.js';
 
 import MultipleChoiceQuestion from './MultipleChoiceQuestion';
 import Afbeeldingen from "./Afbeeldingen.js";
+import DragDrop from "./DragDrop.js";
 
 class Questions extends Component {
   static get propTypes() {
@@ -30,16 +31,21 @@ class Questions extends Component {
         renderQuestionType = (
           <MultipleChoiceQuestion
             data={this.props.data}
-            handleUserAnswer={this.props.handleUserAnswer}
-            questionNumber={this.props.data.currentQuestion} />
+            handleUserAnswer={this.props.handleUserAnswer} />
         );
         break;
       case "IMG":
         renderQuestionType = (
           <Afbeeldingen
             data={this.props.data}
-            handleUserAnswer={this.props.handleUserAnswer}
-            questionNumber={this.props.data.currentQuestion} />
+            handleUserAnswer={this.props.handleUserAnswer} />
+        );
+        break;
+      case "DD":
+        renderQuestionType = (
+            <DragDrop
+              data={this.props.data}
+              handleUserAnswer={this.props.handleUserAnswer} />
         );
         break;
       default:

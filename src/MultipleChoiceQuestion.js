@@ -9,8 +9,8 @@ class MultipleChoiceQuestion extends Component {
   this.handleUserAnswerToQuestion = this.handleUserAnswerToQuestion.bind(this);
 }
 
-handleUserAnswerToQuestion(answerNumber, questionNumber) {
-  this.props.handleUserAnswer(answerNumber, questionNumber);
+handleUserAnswerToQuestion(answerNumber) {
+  this.props.handleUserAnswer(answerNumber);
 }
 
 render() {
