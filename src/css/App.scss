@@ -1,0 +1,14 @@
+.App {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: #eee;
+}
+
+.App-container {
+  margin-top: 64px;
+  height: calc(100% - 64px);
+  overflow: auto;
+}

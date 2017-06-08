@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAU;EACR,IAAI,EAAE,OAAO;EACb,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,iBAAiB;EACzB,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,OAAO",
+"sources": ["Tijdlijn.scss"],
+"names": [],
+"file": "Tijdlijn.css"
+}
