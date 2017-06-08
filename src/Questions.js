@@ -15,8 +15,7 @@ class Questions extends Component {
   constructor(props) {
     super(props);
 
-    const currentQuestion = this.props.data[0];
-    const questionType = currentQuestion.questionType
+    const questionType = this.props.data[0].questionType;
 
     this.state = {
       currentQuestion: 0,
@@ -35,8 +34,6 @@ class Questions extends Component {
 
     if (answerNumber === currentQuestion.correct) {
       console.log('🎆 Correct! 🎆');
-      // const number = questionNumber + 1;
-      // this.setState({currentQuestion: number});
       this.setState({answerGiven: true});
     } else {
       console.log('🚫 Incorrect... 🚫');
@@ -44,8 +41,6 @@ class Questions extends Component {
   }
 
   closePopup() {
-    const currentNumberQuestion = this.state.currentQuestion;
-    const currentQuestion = this.props.data[currentNumberQuestion];
     const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType
 
     const number = this.state.currentQuestion + 1;
@@ -57,36 +52,42 @@ class Questions extends Component {
     let renderQuestionType;
 
     switch(this.state.questionType) {
-        case "MC":
-            renderQuestionType = <MultipleChoiceQuestion
-                                    data={this.props.data}
-                                    handleUserAnswer={this.handleUserAnswer}
-                                    questionNumber={this.state.currentQuestion} />
-            break;
-        case "IMG":
-            renderQuestionType = <Afbeeldingen
-                                    data={this.props.data}
-                                    handleUserAnswer={this.handleUserAnswer}
-                                    questionNumber={this.state.currentQuestion} />
-            break;
+      case "MC":
+        renderQuestionType = (
+          <MultipleChoiceQuestion
+            data={this.props.data}
+            handleUserAnswer={this.handleUserAnswer}
+            questionNumber={this.state.currentQuestion} />
+        );
+        break;
+      case "IMG":
+        renderQuestionType = (
+          <Afbeeldingen
+            data={this.props.data}
+            handleUserAnswer={this.handleUserAnswer}
+            questionNumber={this.state.currentQuestion} />
+        );
+        break;
+      default:
+        console.error(`Invalid questionType: ${this.state.questionType}`);
+        break;
     }
 
-      if (!this.state.answerGiven) {
-          return (
-              <div className='Questions'>
-                  {renderQuestionType}
-              </div>
-          );
+    if (!this.state.answerGiven) {
 
-      }else{
-          return (
-              <div className='Questions'>
-                  <Popup
-                      answerClicked={this.closePopup}
-                  />
-              </div>
-          );
-      }
+      return (
+        <div className='Questions'>
+          {renderQuestionType}
+        </div>
+      );
+    } else {
+
+      return (
+        <div className='Questions'>
+          <Popup answerClicked={this.closePopup} />
+        </div>
+      );
+    }
   }
 }
 
