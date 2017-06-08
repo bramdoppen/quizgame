@@ -3,6 +3,8 @@ import { Draggable, Droppable } from 'react-drag-and-drop'
 import questionsData from './quiz/quiz-data.json';
 import './css/components/draggable.css';
 
+// Everyone: in order for this file to work, do: npm install react-drag-and-drop
+
 class DragDrop extends Component {
     constructor(props) {
         super(props)

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Navbar from "./Navbar";
 import Questions from './Questions';
 import DragDrop from './DragDrop';
+import SortableComponent from './Reorder';
 
 import Tijdlijn from "./Tijdlijn";
 
@@ -18,7 +19,8 @@ class App extends Component {
         <div className="App-container">
           <h1>Welcome to Quiz Game!</h1>
           <Questions data={questionsData} />
-          <DragDrop data={questionsData} whichArray="22" />
+          {/*<DragDrop data={questionsData} whichArray="22" />*/}
+          <SortableComponent data={questionsData} whichArray="22" />
         </div>
       </div>
     );
