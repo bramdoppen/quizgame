@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
 body {
   margin: 0;
-  padding: 10px;
+  padding: 0;
   font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 .App {
@@ -30,6 +30,14 @@ body {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+#div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black; }
+
 .charly {
   width: auto;
   height: 200px; }
