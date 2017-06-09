@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './css/Questions.css';
-
+import PopoverDemo from "./PopOver";
 import Popup from './Popup.js';
 
 import MultipleChoiceQuestion from './MultipleChoiceQuestion';
@@ -58,6 +58,9 @@ class Questions extends Component {
       return (
         <div className='Questions'>
           {renderQuestionType}
+          <PopoverDemo
+              data={this.props.data}
+          />
         </div>
       );
     } else {

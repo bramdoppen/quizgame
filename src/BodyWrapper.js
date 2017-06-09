@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Questions from './Questions';
 import Tijdlijn from "./Tijdlijn";
-import './css/BodyWrapper.css';
 
 class BodyWrapper extends Component {
   static get propTypes() {

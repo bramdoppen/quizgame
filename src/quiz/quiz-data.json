@@ -8,7 +8,8 @@
       "The previous two answers are correct."
     ],
     "correct": 3,
-    "questionType": "MC"
+    "questionType": "MC",
+    "tip": "Tip vraag 1"
   },
   {
     "question": "What are the three types of JavaScript errors?",
@@ -19,7 +20,8 @@
       "Bad Errors, Very Bad Errors, and Fatal Errors."
     ],
     "correct": 1,
-    "questionType": "MC"
+    "questionType": "MC",
+    "tip": "Tip vraag 2"
   },
   {
     "question": "What is a closure?",
@@ -30,7 +32,8 @@
       "All of the above."
     ],
     "correct": 3,
-    "questionType": "IMG"
+    "questionType": "IMG",
+    "tip": "Tip vraag 3"
   },
   {
     "question": "In React, what method is used to change state?",
@@ -41,7 +44,8 @@
       "stateSet()"
     ],
     "correct": 2,
-    "questionType": "DD"
+    "questionType": "DD",
+    "tip": "Tip vraag 4"
   },
   {
     "question": "Where might you use a closure in JavaScript?",
@@ -51,7 +55,8 @@
       "Event handlers and callback functions.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 5"
   },
   {
     "question": "Which of these is a use case for the bind, call, or apply methods?",
@@ -61,7 +66,8 @@
       "If you're using the map method to run a function on an array and you need to preserve the THIS context, you can use bind.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 6"
   },
   {
     "question": "What does the bind method do?",
@@ -71,7 +77,8 @@
       "Allows you to implement partial application of a function.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 7"
   },
   {
     "question": "How do objects inherit methods in JavaScript?",
@@ -81,7 +88,8 @@
       "Using Parent.method.call inside Child.prototype.method.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 8"
   },
   {
     "question": "What is a promise?",
@@ -91,7 +99,8 @@
       "A proxy for a value that will eventually become available.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 9"
   },
   {
     "question": "What is CORS?",
@@ -101,7 +110,8 @@
       "Allows scripts to interact more openly with content outside of the original domain, leading to better integration between web services.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 10"
   },
   {
     "question": "What is an Angular expression?",
@@ -111,7 +121,8 @@
       "A binding in double curly brackets that gets evaluated and the results appear in the DOM in place of it.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 11"
   },
   {
     "question": "In Angular, what is a directive?",
@@ -121,7 +132,8 @@
       "A combination of HTML and JavaScript that will execute together.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 12"
   },
   {
     "question": "What does strict mode do?",
@@ -131,7 +143,8 @@
       "Prevents the use of global variables and the use of dangerous code like WITH and EVAL.",
       "All of the above."
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 13"
   },
   {
     "question": "What is event bubbling?",
@@ -141,7 +154,8 @@
       "When the browser engine searches sideways on sibling elements for event handlers.",
       "None of the above."
     ],
-    "correct": 1
+    "correct": 1,
+    "tip": "Tip vraag 14"
   },
   {
     "question": "What is event delegation?",
@@ -151,7 +165,8 @@
       "Attaching event handlers to a parent element rather than multiple child elements.",
       "None of the above."
     ],
-    "correct": 2
+    "correct": 2,
+    "tip": "Tip vraag 15"
   },
   {
     "question": "What is dependency injection?",
@@ -161,7 +176,8 @@
       "A coding pattern in which a class receives the instances of objects it needs from an external source rather than creating them itself.",
       "A new drug the kids are doing nowadays."
     ],
-    "correct": 2
+    "correct": 2,
+    "tip": "Tip vraag 16"
   },
   {
     "question": "What are the six primitive data types in JavaScript?",
@@ -171,7 +187,8 @@
       "Number, Class, Object, Hash, String, and Function.",
       "None of the above."
     ],
-    "correct": 1
+    "correct": 1,
+    "tip": "Tip vraag 17"
   },
   {
     "question": "Which of the following is FALSE about the THIS keyword?",
@@ -181,7 +198,8 @@
       "Its value is set at the declaration of a function.",
       "None of the above."
     ],
-    "correct": 2
+    "correct": 2,
+    "tip": "Tip vraag 18"
   },
   {
     "question": "In Angular 2, which of the following are considered Structural Directives (directives that change DOM layout)?",
@@ -191,7 +209,8 @@
       "NgModel and NgForm",
       "None of the above."
     ],
-    "correct": 0
+    "correct": 0,
+    "tip": "Tip vraag 19"
   },
   {
     "question": "Which is TRUE about the events 'load' and 'DOMContentLoaded'?",
@@ -201,7 +220,8 @@
       "The load event is fired when only the DOM is loaded and parsed. DOMContentLoaded is fired when the document is fully loaded, including images.",
       "They're the same thing."
     ],
-    "correct": 1
+    "correct": 1,
+    "tip": "Tip vraag 20"
   },
   {
     "question": "Which of the following is NOT an example of a data structure in JavaScript?",
@@ -211,7 +231,8 @@
       "Set in ES2015",
       "Trie"
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 21"
   },
   {
     "question": "Which of the following values is truthy?",
@@ -221,7 +242,8 @@
       "1",
       "undefined"
     ],
-    "correct": 2
+    "correct": 2,
+    "tip": "Tip vraag 22"
   },
   {
     "question": "What is an IIFE?",
@@ -231,7 +253,8 @@
       "Initially Integrated Functional Element",
       "Internally Indexed File Extension"
     ],
-    "correct": 1
+    "correct": 1,
+    "tip": "Tip vraag 23"
   },
   {
     "question": "In React, what method is used to change state?",
@@ -241,7 +264,8 @@
       "setState()",
       "stateSet()"
     ],
-    "correct": 2
+    "correct": 2,
+    "tip": "Tip vraag 24"
   },
   {
     "question": "Which of the following is an aspect of a pure function?",
@@ -251,7 +275,8 @@
       "Given the same input, it'll always return the same output.",
       "All of the above"
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 25"
   },
   {
     "question": "Where is JavaScript used besides the browser?",
@@ -261,7 +286,8 @@
       "Robots, drones, Internet of Things devices",
       "All of the above"
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 26"
   },
   {
     "question": "What are higher order components in React?",
@@ -271,7 +297,8 @@
       "They're used to extend or modify the behavior of a wrapped component.",
       "All of the above"
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 27"
   },
   {
     "question": "What does the NEW keyword do?",
@@ -281,7 +308,8 @@
       "Sets the THIS variable to the new object and returns the new object.",
       "All of the above"
     ],
-    "correct": 3
+    "correct": 3,
+    "tip": "Tip vraag 28"
   },
   {
     "question": "Welke docent geeft S4D?",
@@ -291,7 +319,8 @@
       "https://i1.rgstatic.net/ii/profile.image/AS%3A285316163358720%401445036082410_l/Robert_Holwerda.png",
       "https://isas.han.nl/imageloader.aspx?path=2&id=170022&Def=NoPictureFemalePort.gif"
     ],
-    "correct": 2
+    "correct": 2,
+    "tip": "Tip vraag 29"
   },
   {
     "question": "Hallo, ik ben Robert",
@@ -301,6 +330,7 @@
       "https://i1.rgstatic.net/ii/profile.image/AS%3A285316163358720%401445036082410_l/Robert_Holwerda.png",
       "https://i1.rgstatic.net/ii/profile.image/AS%3A285316163358720%401445036082410_l/Robert_Holwerda.png"
     ],
-    "correct": 0
+    "correct": 0,
+    "tip": "Tip vraag 30"
   }
 ]
