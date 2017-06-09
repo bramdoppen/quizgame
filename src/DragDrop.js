@@ -64,8 +64,6 @@ class DragDrop extends Component {
         }
       }
 
-      echteAntwoordNummer++
-
       return echteAntwoordNummer
     }
 }
