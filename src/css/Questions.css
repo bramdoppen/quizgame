@@ -2,13 +2,16 @@
   flex: 1 0;
   font-style: italic;
   font-size: 1.2em;
-  color: #000; }
+  color: #000;
+  margin: 32px 32px 32px 0; }
+  @media (max-width: 960px) {
+    .Questions {
+      margin: 16px; } }
   .Questions ul {
     list-style-type: none;
     padding: 0; }
   .Questions h1 {
     margin: 0 auto;
-    width: 80%;
     font-size: 1.5em;
     padding: 16px 0; }
 

@@ -1,4 +1,9 @@
+$responsive-size: 960px;
+
 .BodyWrapper {
   display: flex;
-  height: 100%;
+
+  @media (max-width: $responsive-size) {
+    flex-direction: column-reverse;
+  }
 }

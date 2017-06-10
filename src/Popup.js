@@ -10,21 +10,21 @@ class Popup extends Component {
     };
   }
 
+  constructor(props) {
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
   handleClick(event) {
     this.props.answerClicked();
   }
 
   render() {
-
-    const handleClick = this.handleClick.bind(this);
-
     return (
       <div className='Popup'>
-      <h2>Hi goed gedaan</h2>
-      <p
-      onClick={handleClick}>
-        close
-      </p>
+        <h2>Hi goed gedaan</h2>
+        <p onClick={this.handleClick}>Close</p>
       </div>
     );
   }

@@ -1,16 +1,29 @@
-.Popup h2 {
-  font-size: 2em;
+.Popup {
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    border: 1px solid #333;
+    margin: 16px auto;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #ddd;
+
+    &:hover,
+    &:focus {
+      background-color: #555;
+      color: #FFF;
+    }
+
+    &:active {
+      background-color: #333;
+      color: #FFF;
+    }
+  }
 }
 
-.Popup p {
-  border: 1px solid #333;
-  width: 80%;
-  margin: 16px auto;
-  padding: 10px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ddd;
-}

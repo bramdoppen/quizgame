@@ -9,6 +9,7 @@ import Afbeeldingen from "./Afbeeldingen.js";
 import DragDrop from "./DragDrop.js";
 
 class Questions extends Component {
+
   static get propTypes() {
     return {
       //data: PropTypes.array.isRequired,
@@ -54,7 +55,6 @@ class Questions extends Component {
     }
 
     if (!this.props.stateSwitch) {
-
       return (
         <div className='Questions'>
           {renderQuestionType}
@@ -64,7 +64,6 @@ class Questions extends Component {
         </div>
       );
     } else {
-
       return (
         <div className='Questions'>
           <Popup answerClicked={this.props.closePopup} />
@@ -72,6 +71,7 @@ class Questions extends Component {
       );
     }
   }
+
 }
 
 export default Questions;

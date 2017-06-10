@@ -1,10 +1,17 @@
+$responsive-size: 960px;
+
 .Tijdlijn {
-  flex: 0 1 15%;
-  width: 15%;
-  height: calc(100% - 64px);
-  max-height: 300px;
+  flex: none;
+  width: 300px;
+  min-height: 450px;
   margin: 32px;
   padding: 16px;
   background-color: #4C6578;
   color: #eeeeee;
+
+  @media (max-width: $responsive-size) {
+    width: auto;
+    min-height: auto;
+    margin: 16px;
+  }
 }

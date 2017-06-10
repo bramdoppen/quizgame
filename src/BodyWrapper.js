@@ -21,7 +21,6 @@ class BodyWrapper extends Component {
       answerGiven: false,
       answerNummer: 0,
       answer: "meep",
-
     };
 
     this.handleUserAnswer = this.handleUserAnswer.bind(this);

@@ -1,6 +1,5 @@
 .Answer {
   border: 1px solid #333;
-  width: 80%;
   margin: 16px auto;
   padding: 10px;
   cursor: pointer;
@@ -10,11 +9,13 @@
   user-select: none;
   background-color: #ddd;
 
-  &:hover{
+  &:hover,
+  &:focus {
     background-color: #555;
     color: #FFF;
   }
-  &:hover{
+
+  &:active {
     background-color: #333;
     color: #FFF;
   }
