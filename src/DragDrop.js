@@ -7,10 +7,10 @@ class DragDrop extends Component {
         super(props)
         this.state = {
             draggable : this.props.data.answers,
-            correctAnswer: this.props.data.answers[this.props.data.correct] ,
+            correctAnswer: this.props.data.answers[this.props.data.correct],
             question  : this.props.data.question,
             dropped   : '',
-            hovering  : false
+            hovering  : false,
         }
 
         this.translateAnswer = this.translateAnswer.bind(this);
@@ -19,7 +19,7 @@ class DragDrop extends Component {
         let draggable = this.state.draggable.map((title, index) => {
             return (
                 <li key={title}>
-                    <Draggable  type="answer" data={title}>{title}</Draggable>
+                    <Draggable type="answer" data={title}>{title}</Draggable>
                 </li>
             );
         });

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,YAAa;EACX,OAAO,EAAE,IAAI;EAEb,yBAAqC;IAHvC,YAAa;MAIT,cAAc,EAAE,cAAc",
-"sources": ["BodyWrapper.scss"],
-"names": [],
-"file": "BodyWrapper.css"
-}

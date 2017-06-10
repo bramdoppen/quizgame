@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 
 import Navbar from "./Navbar";
-import BodyWrapper from "./BodyWrapper.js";
+import QuestionsWrapper from "./QuestionsWrapper.js";
 // import SortableComponent from './Reorder';
 
 //json
@@ -15,7 +15,7 @@ class App extends Component {
         <Navbar />
         <div className="container">
           {/*<h1>Welcome to Quiz Game!</h1>*/}
-          <BodyWrapper data={questionsData}/>
+          <QuestionsWrapper data={questionsData}/>
         </div>
       </div>
     );

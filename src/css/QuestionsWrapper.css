@@ -1,0 +1,7 @@
+.QuestionsWrapper {
+  display: flex; }
+  @media (max-width: 960px) {
+    .QuestionsWrapper {
+      flex-direction: column-reverse; } }
+
+/*# sourceMappingURL=QuestionsWrapper.css.map */

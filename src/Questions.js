@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './css/Questions.css';
-import PopoverDemo from "./PopOver";
 import Popup from './Popup.js';
 
 import MultipleChoiceQuestion from './MultipleChoiceQuestion';
 import Afbeeldingen from "./Afbeeldingen.js";
 import DragDrop from "./DragDrop.js";
+import PopOver from "./PopOver";
 
 class Questions extends Component {
 
@@ -19,6 +19,7 @@ class Questions extends Component {
 
   constructor(props) {
     super(props);
+
     this.state = {
       stateSwitchSwap: this.props.stateSwitch,
     };
@@ -58,9 +59,7 @@ class Questions extends Component {
       return (
         <div className='Questions'>
           {renderQuestionType}
-          <PopoverDemo
-              data={this.props.data}
-          />
+          <PopOver data={this.props.data} />
         </div>
       );
     } else {

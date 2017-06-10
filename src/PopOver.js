@@ -3,16 +3,15 @@
  */
 import React, { Component } from 'react';
 import './css/PopOver.css';
-import Popover from 'react-simple-popover';
+import SimplePopover from 'react-simple-popover';
 
-class PopoverDemo extends Component {
+class PopOver extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             open: false
         };
-
     }
 
     handleClick() {
@@ -26,7 +25,6 @@ class PopoverDemo extends Component {
     render() {
 
         return (
-
             <div className="PopOver">
                 <img
                     src="https://d30y9cdsu7xlg0.cloudfront.net/png/7455-200.png"
@@ -34,16 +32,16 @@ class PopoverDemo extends Component {
                     ref="target"
                     onClick={this.handleClick.bind(this)}  />
 
-                <Popover
+                <SimplePopover
                     placement='left'
                     target={this.refs.target}
                     show={this.state.open}
                     onHide={this.handleClose.bind(this)} >
                     <p>{this.props.data.tip}</p>
-                </Popover>
+                </SimplePopover>
             </div>
         );
     }
 }
 
-export default PopoverDemo;
+export default PopOver;

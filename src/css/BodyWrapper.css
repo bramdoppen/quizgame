@@ -1,7 +1,0 @@
-.BodyWrapper {
-  display: flex; }
-  @media (max-width: 960px) {
-    .BodyWrapper {
-      flex-direction: column-reverse; } }
-
-/*# sourceMappingURL=BodyWrapper.css.map */

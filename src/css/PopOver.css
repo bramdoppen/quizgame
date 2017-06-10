@@ -1,9 +1,8 @@
-.PopOver img {
-  height: 40px;
-  width: 40px; }
-
 .PopOver {
   float: right;
-  margin-top: 50px; }
+  margin: 0 16px -16px 0; }
+  .PopOver img {
+    height: 40px;
+    width: 40px; }
 
 /*# sourceMappingURL=PopOver.css.map */

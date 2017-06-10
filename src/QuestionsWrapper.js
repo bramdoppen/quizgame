@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './css/QuestionsWrapper.css';
 import Questions from './Questions';
 import Tijdlijn from "./Tijdlijn";
 
-class BodyWrapper extends Component {
+class QuestionsWrapper extends Component {
   static get propTypes() {
     return {
       data: PropTypes.array.isRequired,
@@ -53,19 +54,19 @@ class BodyWrapper extends Component {
 
   render() {
     return (
-      <div className="BodyWrapper">
-        <Tijdlijn
-          answer={this.state.answer}
-        />
-        <Questions
-          data={this.props.data[this.state.currentQuestion]}
-          stateSwitch={this.state.answerGiven}
-          handleUserAnswer={this.handleUserAnswer}
-          closePopup={this.closePopup}
-        />
+      <div className="QuestionsWrapper">
+          <Tijdlijn
+            answer={this.state.answer}
+          />
+          <Questions
+            data={this.props.data[this.state.currentQuestion]}
+            stateSwitch={this.state.answerGiven}
+            handleUserAnswer={this.handleUserAnswer}
+            closePopup={this.closePopup}
+          />
       </div>
     );
   }
 }
 
-export default BodyWrapper;
+export default QuestionsWrapper;
