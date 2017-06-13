@@ -1,11 +1,19 @@
 $responsive-size: 960px;
+$text-color: #0A619C;
 
 .Questions {
   flex: 1 0;
-  font-style: italic;
+  font-style: normal;
   font-size: 1.2em;
-  color: #000;
-  margin: 32px 32px 32px 0;
+  color: $text-color;
+  margin: auto;
+  max-width:900px;
+  min-height: 200px;
+  position:relative;
+
+  background: white;
+  border-radius: 25px;
+  box-shadow:2px 2px 65px rgba(0,0,0, .19);
 
   @media (max-width: $responsive-size) {
     margin: 16px;
@@ -14,11 +22,17 @@ $responsive-size: 960px;
   ul {
     list-style-type: none;
     padding: 0;
+    margin:40px 0;
   }
 
   h1 {
     margin: 0 auto;
-    font-size: 1.5em;
-    padding: 16px 0;
+    font-size: 22px;
+    background-color: #3498DB;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    padding: 34px 50px 30px 50px;
+    border-radius: 25px 25px 0 0;
   }
 }

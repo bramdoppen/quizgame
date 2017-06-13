@@ -3,6 +3,7 @@ import './css/App.css';
 
 import Navbar from "./Navbar";
 import QuestionsWrapper from "./QuestionsWrapper.js";
+import FirebaseGoogleAuth from "./FirebaseAuth";
 // import SortableComponent from './Reorder';
 
 //json
@@ -15,7 +16,9 @@ class App extends Component {
         <Navbar />
         <div className="container">
           {/*<h1>Welcome to Quiz Game!</h1>*/}
-          <QuestionsWrapper data={questionsData}/>
+          <QuestionsWrapper data={questionsData} />
+            <FirebaseGoogleAuth />
+
         </div>
       </div>
     );

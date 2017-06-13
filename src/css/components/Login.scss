@@ -1,0 +1,16 @@
+.loginButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-weight: 600;
+  color: #3498db;
+
+  [class$="__inner"] {
+    position:relative;
+    top:24px;
+  }
+}

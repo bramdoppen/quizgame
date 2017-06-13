@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import './css/QuestionsWrapper.css';
 import Questions from './Questions';
 import Tijdlijn from "./Tijdlijn";
+import Dock from "./Dock";
+// import './css/BodyWrapper.css';
 
 class QuestionsWrapper extends Component {
   static get propTypes() {
@@ -56,15 +58,16 @@ class QuestionsWrapper extends Component {
   render() {
     return (
       <div className="QuestionsWrapper">
-          <Tijdlijn
-            answer={this.state.answer}
-          />
+          {/*<Tijdlijn*/}
+            {/*answer={this.state.answer}*/}
+          {/*/>*/}
           <Questions
             data={this.props.data[this.state.currentQuestion]}
             stateSwitch={this.state.answerGiven}
             handleUserAnswer={this.handleUserAnswer}
             closePopup={this.closePopup}
           />
+          <Dock />
       </div>
     );
   }

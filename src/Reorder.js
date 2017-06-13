@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import {SortableContainer, SortableElement, arrayMove} from 'react-sortable-hoc';
 import './css/components/reorder.css';
+import './css/Answer.css';
 
 
 // in order to work: npm install react-sortable-hoc --save
 
 const SortableItem = SortableElement(({value}) =>
-    <li>{value}</li>
+    <li className="Answer">{value}</li>
 );
 
 const SortableList = SortableContainer(({items}) => {
