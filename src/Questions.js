@@ -7,6 +7,7 @@ import MultipleChoiceQuestion from './MultipleChoiceQuestion';
 import Afbeeldingen from "./Afbeeldingen.js";
 import DragDrop from "./DragDrop.js";
 import PopOver from "./PopOver";
+import Reorder from "./Reorder";
 
 class Questions extends Component {
 
@@ -46,6 +47,13 @@ class Questions extends Component {
       case "DD":
         renderQuestionType = (
             <DragDrop
+              data={this.props.data}
+              handleUserAnswer={this.props.handleUserAnswer} />
+        );
+        break;
+      case "REORDER":
+        renderQuestionType = (
+            <Reorder
               data={this.props.data}
               handleUserAnswer={this.props.handleUserAnswer} />
         );

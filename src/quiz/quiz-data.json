@@ -48,14 +48,15 @@
     "tip": "Tip vraag 4"
   },
   {
-    "question": "Where might you use a closure in JavaScript?",
+    "question": "Zet de antwoorden in de juiste volgorde",
     "answers": [
-      "When currying or implementing partial application.",
-      "To emulate private methods.",
-      "Event handlers and callback functions.",
-      "All of the above."
+      "2",
+      "1",
+      "4",
+      "3"
     ],
-    "correct": 3,
+    "correct": "1,2,3,4",
+    "questionType": "REORDER",
     "tip": "Tip vraag 5"
   },
   {

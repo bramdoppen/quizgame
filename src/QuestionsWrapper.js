@@ -34,6 +34,7 @@ class QuestionsWrapper extends Component {
     const currentQuestion = this.props.data[currentNumberQuestion];
     const givenAnswers = currentQuestion.answers[answerNumber];
 
+    console.log(answerNumber, currentQuestion.correct)
     if (answerNumber === currentQuestion.correct) {
       console.log('🎆 Correct! 🎆');
       this.setState({answerGiven: true, answer: givenAnswers});
