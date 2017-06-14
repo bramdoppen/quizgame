@@ -17,7 +17,7 @@ class DragDrop extends Component {
     render() {
         let draggable = this.state.draggable.map((title, index) => {
             return (
-                <li key={title}>
+                <li key={title.choice}>
                     <Draggable type="answer" data={title.choice}>{title.choice}</Draggable>
                 </li>
             );
@@ -57,8 +57,8 @@ class DragDrop extends Component {
       const hoeveelheidAntwoorden = antwoorden.length;
       let echteAntwoordNummer;
 
-      for (let antwoordTeller = 0; antwoordTeller <= hoeveelheidAntwoorden; antwoordTeller++) {
-        if (answer === antwoorden[antwoordTeller]) {
+      for (let antwoordTeller = 0; antwoordTeller < hoeveelheidAntwoorden; antwoordTeller++) {
+        if (answer === antwoorden[antwoordTeller].choice) {
           echteAntwoordNummer = antwoordTeller;
         }
       }
