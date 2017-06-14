@@ -1,13 +1,11 @@
-.Afbeeldingen {
-  margin: 16px auto; }
-  .Afbeeldingen img {
-    display: inline-block;
-    margin: 8px;
-    height: 150px;
-    width: 150px;
-    transition: transform 0.15s; }
-    .Afbeeldingen img:hover {
-      border: 5px solid #333;
-      transform: scale(1.1) translateY(-2.5%); }
+.Afbeeldingen img {
+  display: inline-block;
+  margin: 8px;
+  height: 150px;
+  width: 150px;
+  transition: transform 0.15s; }
+  .Afbeeldingen img:hover {
+    border: 5px solid #333;
+    transform: scale(1.1) translateY(-2.5%); }
 
 /*# sourceMappingURL=Afbeeldingen.css.map */

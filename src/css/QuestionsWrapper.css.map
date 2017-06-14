@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,iBAAkB;EAChB,OAAO,EAAE,IAAI;EAEb,yBAAqC;IAHvC,iBAAkB;MAId,cAAc,EAAE,cAAc",
+"mappings": "AAEA,iBAAkB;EAChB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,MAAM;EACvB,MAAM,EAAE,kBAAkB;EAE1B,yBAAqC;IANvC,iBAAkB;MAOd,cAAc,EAAE,cAAc",
 "sources": ["QuestionsWrapper.scss"],
 "names": [],
 "file": "QuestionsWrapper.css"

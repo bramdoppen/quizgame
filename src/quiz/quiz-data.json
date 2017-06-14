@@ -1,352 +1,136 @@
 [
   {
-   "question": "Er komen 3 mensen binnen, wie ga je als eerst helpen?",
+    "question": "Three people are entering the Emergency Room. You're the only one on call. Who needs your help first?",
     "answers": [
-      {
-        "choice": "http://i.dailymail.co.uk/i/pix/2014/12/28/244BC99E00000578-2889032-Brave_Baby_Jenna_Smith_now_nine_months_old_was_born_with_an_enor-a-99_1419780114369.jpg",
-        "nextQuestion": 0,
-        "message": "onderzoek is bezig, o en hier heb je de uitslag"
-      },
-      {
-        "choice": "tumorbaby.jpg",
-        "nextQuestion": 0,
-        "message": "onderzoek is bezig, o en hier heb je de uitslag"
-      },
-      {
-        "choice": "/tumorbaby.jpg",
-        "nextQuestion": 0,
-        "message": "onderzoek is bezig, o en hier heb je de uitslag"
-      },
       {
         "choice": "img/tumorbaby.jpg",
         "nextQuestion": 0,
-        "message": "onderzoek is bezig, o en hier heb je de uitslag"
+        "message": "Option currently unavailable"
+      },
+      {
+        "choice": "img/dropvrouw3.jpg",
+        "nextQuestion": 1,
+        "message": "So this woman, who has what, a few years to go, deserves your attention first? Well, alright, it's your choice. Let's see how you could help her."
+      },
+      {
+        "choice": "img/kameleonkind.jpg",
+        "nextQuestion": 0,
+        "message": "Option currently unavailable"
       }
     ],
     "questionType": "IMG",
-    "tip": "Tip vraag 1"
+    "tip": "Just click an image, it's not that hard now, is it?"
   },
   {
-    "question": "What are the three types of JavaScript errors?",
+    "question": "Looks like the old lady has some swollen ankles, and an irregular heartbeat. She also complains of being tired.",
     "answers": [
-      "Parse Errors, Syntax Errors and Runtime Errors.",
-      "Loading Errors, Runtime Errors and Logic Errors.",
-      "Syntax Errors, Logic Errors and Loading Errors.",
-      "Bad Errors, Very Bad Errors, and Fatal Errors."
+      {
+        "choice": "Make an echo of the swollen ankles",
+        "nextQuestion": 2,
+        "message": "After six hours you find some botox in those fat ankles. The old lady's husband tells you he has an ankle fetish."
+      },
+      {
+        "choice": "Send the whining lady home, there's nothing wrong with her",
+        "nextQuestion": 3,
+        "message": " Seriously? Why did you think that was a good idea? Now the woman is filing a complaint against you, and you are most likely going to lose your job. Well done. Really."
+      },
+      {
+        "choice": "Test if she has a heart attack",
+        "nextQuestion": 4,
+        "message": "Option currently unavailable"
+      },
+      {
+        "choice": "Draw some blood",
+        "nextQuestion": 4,
+        "message": "Option currently unavailable"
+      }
     ],
-    "correct": 1,
     "questionType": "MC",
-    "tip": "Tip vraag 2"
+    "tip": "Just choose something, it's not that hard now, is it?"
   },
   {
-    "question": "What is a closure?",
+    "question": "So that research didn't really work out. Maybe you should try something else.",
     "answers": [
-      "A function having access to the variables in the parent scope, even after the parent function has returned.",
-      "A stateful function; a function that preserves state.",
-      "An outer function that returns an inner function that's bound to the outer function's environment.",
-      "All of the above."
+      {
+        "choice": "Send the whining lady home, there's nothing wrong with her",
+        "nextQuestion": 3,
+        "message": " Seriously? Why did you think that was a good idea? Now the woman is filing a complaint against you, and you are most likely going to lose your job. Well done. Really."
+      },
+      {
+        "choice": "Test if she has a heart attack",
+        "nextQuestion": 4,
+        "message": "Old lady does not have a heart attack, although the signs look very much like it. However she has a dangerously high blood pressure."
+      },
+      {
+        "choice": "Draw some blood",
+        "nextQuestion": 4,
+        "message": "Old lady does not have a heart attack, although the signs look very much like it. However she has a dangerously high blood pressure."
+      }
     ],
-    "correct": 3,
-    "questionType": "IMG",
-    "tip": "Tip vraag 3"
+    "questionType": "MC",
+    "tip": "Just choose something, it's not that hard now, is it?"
   },
   {
-    "question": "In React, what method is used to change state?",
+    "question": "This is where you go if you send the lady home or if you take a break. We don't have that fixed just yet.",
     "answers": [
-      "changeState()",
-      "onChange()",
-      "setState()",
-      "stateSet()"
+      {
+        "choice": "random choices",
+        "nextQuestion": 0,
+        "message": " Back to the start"
+      },
+      {
+        "choice": "that will take you back to the first question",
+        "nextQuestion": 0,
+        "message": " Back to the start"
+      }
     ],
-    "correct": 2,
     "questionType": "DD",
-    "tip": "Tip vraag 4"
+    "tip": "Try starting over"
   },
   {
-    "question": "Zet de antwoorden in de juiste volgorde",
+    "question": "So if it isn't a heart attack, what is it?",
     "answers": [
-      "2",
-      "1",
-      "4",
-      "3"
+      {
+        "choice": "Admit old lady to have her tested more thoroughly and take a break, you've earned some rest, right? ",
+        "nextQuestion": 5,
+        "message": " Whoa! The kid with the chameleon has collapsed! Your boss is FREAKING MAD. Go take care of that child immediately. "
+      },
+      {
+        "choice": "Admit old lady to have her tested more thoroughly, and go to the kid with the chameleon",
+        "nextQuestion": 5,
+        "message": " "
+      },
+      {
+        "choice": "Admit old lady to have her tested more thoroughly, and go find out what's going on with the baby",
+        "nextQuestion": 6,
+        "message": " "
+      }
     ],
-    "correct": "1,2,3,4",
-    "questionType": "REORDER",
-    "tip": "Tip vraag 5"
+    "questionType": "MC",
+    "tip": "Just choose something, it's not that hard now, is it?"
   },
   {
-    "question": "Which of these is a use case for the bind, call, or apply methods?",
+    "question": "From here on starts the kid with chameleon story. It's not written yet. Too bad",
     "answers": [
-      "You can use call or apply to borrow methods from other objects.",
-      "You can use bind for partial function application.",
-      "If you're using the map method to run a function on an array and you need to preserve the THIS context, you can use bind.",
-      "All of the above."
+      {
+        "choice": "Go back to start",
+        "nextQuestion": 0,
+        "message": "Yes. Let's try again."
+      }
     ],
-    "correct": 3,
-    "tip": "Tip vraag 6"
+    "questionType": "MC",
+    "tip": "Just choose something, it's not that hard now, is it?"
   },
   {
-    "question": "What does the bind method do?",
+    "question": "From here on starts the baby with swollen head/neck story. It's not written yet. Too bad",
     "answers": [
-      "Returns a function that, when executed, will call the original function with a THIS context that you pass in.",
-      "Prevents the value of this from being overridden by call() or apply().",
-      "Allows you to implement partial application of a function.",
-      "All of the above."
+      {
+        "choice": "Go back to start",
+        "nextQuestion": 0,
+        "message": "Yes. Let's try again."
+      }
     ],
-    "correct": 3,
-    "tip": "Tip vraag 7"
-  },
-  {
-    "question": "How do objects inherit methods in JavaScript?",
-    "answers": [
-      "With Object.create().",
-      "With class Sub extends Super in ES2015.",
-      "Using Parent.method.call inside Child.prototype.method.",
-      "All of the above."
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 8"
-  },
-  {
-    "question": "What is a promise?",
-    "answers": [
-      "An object that represents a possible future value.",
-      "An object used for deferred and asynchronous computations.",
-      "A proxy for a value that will eventually become available.",
-      "All of the above."
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 9"
-  },
-  {
-    "question": "What is CORS?",
-    "answers": [
-      "Cross-Origin Resource Sharing",
-      "Allows restricted resources (e.g. fonts) on a web page to be requested from an outside domain",
-      "Allows scripts to interact more openly with content outside of the original domain, leading to better integration between web services.",
-      "All of the above."
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 10"
-  },
-  {
-    "question": "What is an Angular expression?",
-    "answers": [
-      "A JavaScript-like code snippet that is evaluated by Angular.",
-      "A code snippet that is evaluated in the context of the current model scope, rather than within the scope of the global context (window).",
-      "A binding in double curly brackets that gets evaluated and the results appear in the DOM in place of it.",
-      "All of the above."
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 11"
-  },
-  {
-    "question": "In Angular, what is a directive?",
-    "answers": [
-      "An Angular feature that takes an element and gives it new functionality.",
-      "A reusable component.",
-      "A combination of HTML and JavaScript that will execute together.",
-      "All of the above."
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 12"
-  },
-  {
-    "question": "What does strict mode do?",
-    "answers": [
-      "Makes code more optimizable.",
-      "Adds restrictions to prevent errors.",
-      "Prevents the use of global variables and the use of dangerous code like WITH and EVAL.",
-      "All of the above."
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 13"
-  },
-  {
-    "question": "What is event bubbling?",
-    "answers": [
-      "When the browser engine searches down the DOM tree for event handlers.",
-      "When the browser engine searches up the DOM tree for event handlers.",
-      "When the browser engine searches sideways on sibling elements for event handlers.",
-      "None of the above."
-    ],
-    "correct": 1,
-    "tip": "Tip vraag 14"
-  },
-  {
-    "question": "What is event delegation?",
-    "answers": [
-      "Attaching event handlers to child elements rather than parent elements.",
-      "Creating custom event handlers.",
-      "Attaching event handlers to a parent element rather than multiple child elements.",
-      "None of the above."
-    ],
-    "correct": 2,
-    "tip": "Tip vraag 15"
-  },
-  {
-    "question": "What is dependency injection?",
-    "answers": [
-      "There's no such thing.",
-      "A type of data structure.",
-      "A coding pattern in which a class receives the instances of objects it needs from an external source rather than creating them itself.",
-      "A new drug the kids are doing nowadays."
-    ],
-    "correct": 2,
-    "tip": "Tip vraag 16"
-  },
-  {
-    "question": "What are the six primitive data types in JavaScript?",
-    "answers": [
-      "Function, String, Undefined, Digit, Nil, and Double.",
-      "Boolean, Null, Undefined, Number, String, and Symbol in ES6.",
-      "Number, Class, Object, Hash, String, and Function.",
-      "None of the above."
-    ],
-    "correct": 1,
-    "tip": "Tip vraag 17"
-  },
-  {
-    "question": "Which of the following is FALSE about the THIS keyword?",
-    "answers": [
-      "Its value is established at the invocation of a function.",
-      "When a function is invoked with the NEW keyword, THIS is bound to the new object.",
-      "Its value is set at the declaration of a function.",
-      "None of the above."
-    ],
-    "correct": 2,
-    "tip": "Tip vraag 18"
-  },
-  {
-    "question": "In Angular 2, which of the following are considered Structural Directives (directives that change DOM layout)?",
-    "answers": [
-      "NgFor and NgIf",
-      "NgStyle and NgClass",
-      "NgModel and NgForm",
-      "None of the above."
-    ],
-    "correct": 0,
-    "tip": "Tip vraag 19"
-  },
-  {
-    "question": "Which is TRUE about the events 'load' and 'DOMContentLoaded'?",
-    "answers": [
-      "The DOMContentLoaded event comes after the load event.",
-      "DOMContentLoaded is fired when the document has been loaded and parsed; load fires when all files have finished loading, including images.",
-      "The load event is fired when only the DOM is loaded and parsed. DOMContentLoaded is fired when the document is fully loaded, including images.",
-      "They're the same thing."
-    ],
-    "correct": 1,
-    "tip": "Tip vraag 20"
-  },
-  {
-    "question": "Which of the following is NOT an example of a data structure in JavaScript?",
-    "answers": [
-      "Object",
-      "Array",
-      "Set in ES2015",
-      "Trie"
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 21"
-  },
-  {
-    "question": "Which of the following values is truthy?",
-    "answers": [
-      "0",
-      "\"\" (empty string)",
-      "1",
-      "undefined"
-    ],
-    "correct": 2,
-    "tip": "Tip vraag 22"
-  },
-  {
-    "question": "What is an IIFE?",
-    "answers": [
-      "Immediately Iterable Function Evaluation",
-      "Immediately Invoked Function Expression",
-      "Initially Integrated Functional Element",
-      "Internally Indexed File Extension"
-    ],
-    "correct": 1,
-    "tip": "Tip vraag 23"
-  },
-  {
-    "question": "In React, what method is used to change state?",
-    "answers": [
-      "changeState()",
-      "onChange()",
-      "setState()",
-      "stateSet()"
-    ],
-    "correct": 2,
-    "tip": "Tip vraag 24"
-  },
-  {
-    "question": "Which of the following is an aspect of a pure function?",
-    "answers": [
-      "Doesn't have unintended side effects.",
-      "Doesn't rely on, or affect, external state.",
-      "Given the same input, it'll always return the same output.",
-      "All of the above"
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 25"
-  },
-  {
-    "question": "Where is JavaScript used besides the browser?",
-    "answers": [
-      "Servers, databases, operating systems",
-      "Desktop apps, mobile web apps, mobile hybrid apps, mobile native apps",
-      "Robots, drones, Internet of Things devices",
-      "All of the above"
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 26"
-  },
-  {
-    "question": "What are higher order components in React?",
-    "answers": [
-      "They're basically wrappers for other components.",
-      "They take in another component as an argument.",
-      "They're used to extend or modify the behavior of a wrapped component.",
-      "All of the above"
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 27"
-  },
-  {
-    "question": "What does the NEW keyword do?",
-    "answers": [
-      "Creates a new empty object.",
-      "Sets the prototype of the new object to the constructor's prototype and calls the constructor.",
-      "Sets the THIS variable to the new object and returns the new object.",
-      "All of the above"
-    ],
-    "correct": 3,
-    "tip": "Tip vraag 28"
-  },
-  {
-    "question": "Welke docent geeft S4D?",
-    "answers": [
-      "https://isas.han.nl/imageloader.aspx?path=2&id=520646&Def=NoPictureMalePort.gif",
-      "https://isas.han.nl/imageloader.aspx?path=2&id=520636&Def=NoPictureMalePort.gif",
-      "https://i1.rgstatic.net/ii/profile.image/AS%3A285316163358720%401445036082410_l/Robert_Holwerda.png",
-      "https://isas.han.nl/imageloader.aspx?path=2&id=170022&Def=NoPictureFemalePort.gif"
-    ],
-    "correct": 2,
-    "tip": "Tip vraag 29"
-  },
-  {
-    "question": "Hallo, ik ben Robert",
-    "answers": [
-      "https://i1.rgstatic.net/ii/profile.image/AS%3A285316163358720%401445036082410_l/Robert_Holwerda.png",
-      "https://i1.rgstatic.net/ii/profile.image/AS%3A285316163358720%401445036082410_l/Robert_Holwerda.png",
-      "https://i1.rgstatic.net/ii/profile.image/AS%3A285316163358720%401445036082410_l/Robert_Holwerda.png",
-      "https://i1.rgstatic.net/ii/profile.image/AS%3A285316163358720%401445036082410_l/Robert_Holwerda.png"
-    ],
-    "correct": 0,
-    "tip": "Tip vraag 30"
+    "questionType": "MC",
+    "tip": "Just choose something, it's not that hard now, is it?"
   }
 ]

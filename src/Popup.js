@@ -23,7 +23,7 @@ class Popup extends Component {
   render() {
     return (
       <div className='Popup'>
-        <h2>{this.props.data}</h2>
+        <h2>{this.props.data.message}</h2>
         <p onClick={this.handleClick}>Close</p>
       </div>
     );

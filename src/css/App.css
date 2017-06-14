@@ -5,10 +5,12 @@
   width: 100vw;
   height: 100vh;
   text-align: center;
-  background-color: #eee; }
+  background-color: #fff; }
   .App > .container {
-    margin-top: 64px;
     height: calc(100% - 64px);
-    overflow: auto; }
+    overflow: auto;
+    background-image: url("../img/ziekenhuis/hospital-er.jpg");
+    background-size: cover;
+    background-position: center; }
 
 /*# sourceMappingURL=App.css.map */

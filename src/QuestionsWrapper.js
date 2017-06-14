@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import './css/QuestionsWrapper.css';
 import Questions from './Questions';
 import Tijdlijn from "./Tijdlijn";
+import Dock from "./Dock.js";
+
 
 class QuestionsWrapper extends Component {
   static get propTypes() {
@@ -47,8 +49,8 @@ class QuestionsWrapper extends Component {
   }
 
   closePopup() {
-    //const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType;
-    //const number = this.state.nextQuestion;
+    const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType;
+    const number = this.state.nextQuestion;
     this.setState({answerGiven: false, currentQuestion: number, questionType: nextQuestionType});
   }
 
