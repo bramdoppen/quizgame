@@ -1,14 +1,29 @@
 [
   {
-    "question": "Which of the following is true about reflows and repaints?",
+   "question": "Er komen 3 mensen binnen, wie ga je als eerst helpen?",
     "answers": [
-      "They're the same thing.",
-      "Repaints (or redraws) occur when elements change their visual styles but not layout.",
-      "Reflows compute layout, are more performance critical, and occur when elements are inserted, removed, moved, animated, etc.",
-      "The previous two answers are correct."
+      {
+        "choice": "http://i.dailymail.co.uk/i/pix/2014/12/28/244BC99E00000578-2889032-Brave_Baby_Jenna_Smith_now_nine_months_old_was_born_with_an_enor-a-99_1419780114369.jpg",
+        "nextQuestion": 0,
+        "message": "onderzoek is bezig, o en hier heb je de uitslag"
+      },
+      {
+        "choice": "tumorbaby.jpg",
+        "nextQuestion": 0,
+        "message": "onderzoek is bezig, o en hier heb je de uitslag"
+      },
+      {
+        "choice": "/tumorbaby.jpg",
+        "nextQuestion": 0,
+        "message": "onderzoek is bezig, o en hier heb je de uitslag"
+      },
+      {
+        "choice": "img/tumorbaby.jpg",
+        "nextQuestion": 0,
+        "message": "onderzoek is bezig, o en hier heb je de uitslag"
+      }
     ],
-    "correct": 3,
-    "questionType": "MC",
+    "questionType": "IMG",
     "tip": "Tip vraag 1"
   },
   {

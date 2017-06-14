@@ -15,7 +15,7 @@ class MultipleChoiceQuestion extends Component {
             <Answer
               key={i}
               number={i}
-              answer={answer}
+              answer={answer.choice}
               answerClicked={this.props.handleUserAnswer}
               currentQuestion={this.props.questionNumber}
             />

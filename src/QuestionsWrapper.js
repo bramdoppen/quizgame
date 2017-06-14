@@ -22,6 +22,7 @@ class QuestionsWrapper extends Component {
       answerGiven: false,
       answerNummer: 0,
       answer: "meep",
+      nextQuestion: 0,
     };
 
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
@@ -34,17 +35,20 @@ class QuestionsWrapper extends Component {
     const currentQuestion = this.props.data[currentNumberQuestion];
     const givenAnswers = currentQuestion.answers[answerNumber];
 
-    if (answerNumber === currentQuestion.correct) {
-      console.log('🎆 Correct! 🎆');
-      this.setState({answerGiven: true, answer: givenAnswers});
-    } else {
-      console.log('🚫 Incorrect... 🚫');
-    }
+    // if (answerNumber === currentQuestion.correct) {
+    //   console.log('🎆 Correct! 🎆');
+    //   this.setState({answerGiven: true, answer: givenAnswers});
+    // } else {
+    //   console.log('🚫 Incorrect... 🚫');
+    //}
+    console.log(this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion);
+    this.setState({nextQuestion: this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion, answerGiven: true, answer: givenAnswers})
+
   }
 
   closePopup() {
-    const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType;
-    const number = this.state.currentQuestion + 1;
+    //const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType;
+    //const number = this.state.nextQuestion;
     this.setState({answerGiven: false, currentQuestion: number, questionType: nextQuestionType});
   }
 

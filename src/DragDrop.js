@@ -19,7 +19,7 @@ class DragDrop extends Component {
         let draggable = this.state.draggable.map((title, index) => {
             return (
                 <li key={title}>
-                    <Draggable type="answer" data={title}>{title}</Draggable>
+                    <Draggable type="answer" data={title.choice}>{title.choice}</Draggable>
                 </li>
             );
         });

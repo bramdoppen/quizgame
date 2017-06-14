@@ -65,7 +65,9 @@ class Questions extends Component {
     } else {
       return (
         <div className='Questions'>
-          <Popup answerClicked={this.props.closePopup} />
+          <Popup
+            answerClicked={this.props.closePopup}
+            data={this.props.data} />
         </div>
       );
     }

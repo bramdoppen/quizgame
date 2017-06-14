@@ -14,7 +14,7 @@ class Afbeeldingen extends Component {
           <AfbeeldingenRenderen
             key={i}
             number={i}
-            plaatje={answer}
+            plaatje={answer.choice}
             answerClicked={this.props.handleUserAnswer}
             currentQuestion={this.props.questionNumber}
             />
