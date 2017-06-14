@@ -36,12 +36,16 @@ class QuestionsWrapper extends Component {
     const currentQuestion = this.props.data[currentNumberQuestion];
     const givenAnswers = currentQuestion.answers[answerNumber];
 
-    this.setState({
-      nextQuestion: this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion,
-      PopupData: this.props.data[this.state.currentQuestion].answers[answerNumber].message,
-      answerGiven: true,
-      answer: givenAnswers })
-
+    if(currentQuestion.questionType !== "REORDER" ) {
+      this.setState({
+        nextQuestion: this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion,
+        PopupData: this.props.data[this.state.currentQuestion].answers[answerNumber].message,
+        answerGiven: true,
+        answer: givenAnswers
+      })
+    } else {
+      console.log("question type is reorder")
+    }
   }
 
   closePopup() {
