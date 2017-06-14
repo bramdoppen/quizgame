@@ -41,7 +41,19 @@
         }
       }
     }
-
+    &[class*="status_empty"] {
+      p:nth-of-type(2) {
+        span:nth-of-type(2) {
+          color: #d4d4d4;
+        }
+      }
+    }&[class*="status_ok"] {
+      p:nth-of-type(2) {
+        span:nth-of-type(2) {
+          color: #80B759;
+        }
+      }
+    }
     &[class*="status_warning"] {
       p:nth-of-type(2) {
         span:nth-of-type(2) {
