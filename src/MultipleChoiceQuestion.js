@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './css/Answer.css';
 import Answer from './Answer';
 
 class MultipleChoiceQuestion extends Component {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './css/QuestionsWrapper.css';
 import Questions from './Questions';
 import Dock from "./Dock.js";
 

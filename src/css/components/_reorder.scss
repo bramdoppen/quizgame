@@ -1,0 +1,42 @@
+.Sortable{
+  width: 80%;
+  margin: auto;
+
+  .Answer {
+    &:after {
+      content: "";
+      border-top: 2px solid #D3D3D3;
+      border-bottom: 2px solid #D3D3D3;
+      background:transparent;
+      width: 21px;
+      height: 9px;
+      position: absolute;
+      right: 27px;
+      top: 2px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  button {
+    margin: 6px 50px;
+    padding: 20px 70px;
+    text-shadow:none;
+    border: 0;
+    border-radius: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #F1F1F1;
+    color: #0A619C;
+    font-size: 17px;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

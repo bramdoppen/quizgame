@@ -2,7 +2,6 @@
  * Created by Charly on 2-6-2017.
  */
 import React, { Component } from 'react';
-import './css/Navbar.css';
 import menuPlaatje from './img/menu-options.png';
 
 // https://facebook.github.io/react/docs/handling-events.html

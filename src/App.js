@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './css/App.css';
+import './css/main.css';
 
 import Navbar from "./Navbar";
 import QuestionsWrapper from "./QuestionsWrapper.js";

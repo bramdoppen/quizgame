@@ -2,7 +2,6 @@
  * Created by Ab on 08-06-17.
  */
 import React, { Component } from 'react';
-import './css/PopOver.css';
 import SimplePopover from 'react-simple-popover';
 
 class PopOver extends Component {

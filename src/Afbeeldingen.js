@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import AfbeeldingenRenderen from './AfbeeldingenRenderen.js'
-import './css/Afbeeldingen.css';
 
 class Afbeeldingen extends Component {
 

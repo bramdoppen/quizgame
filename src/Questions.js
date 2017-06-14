@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './css/Questions.css';
 import Popup from './Popup.js';
 
 import MultipleChoiceQuestion from './MultipleChoiceQuestion';

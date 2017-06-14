@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Draggable, Droppable } from 'react-drag-and-drop'
-import './css/components/draggable.css';
 
 class DragDrop extends Component {
     constructor(props) {

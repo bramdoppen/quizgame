@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './css/Tijdlijn.css';
 let alleAntwoorden = [];
 
 class Tijdlijn extends Component {

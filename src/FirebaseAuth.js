@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import * as firebase from 'firebase';
-import "./css/components/Login.css";
 
 
 const config = {
