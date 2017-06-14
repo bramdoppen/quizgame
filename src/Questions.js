@@ -75,7 +75,8 @@ class Questions extends Component {
         <div className='Questions'>
           <Popup
             answerClicked={this.props.closePopup}
-            data={this.props.data} />
+            data={this.props.data}
+            PopupData={this.props.PopupData}/>
         </div>
       );
     }
