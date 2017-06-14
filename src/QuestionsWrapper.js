@@ -46,9 +46,8 @@ class QuestionsWrapper extends Component {
   }
 
   closePopup() {
-    const nextQuestionType = this.props.data[this.state.currentQuestion + 1].questionType;
-    const number = this.state.nextQuestion;
-    this.setState({answerGiven: false, currentQuestion: number, questionType: nextQuestionType});
+    const nextQuestionType = this.props.data[this.state.nextQuestion].questionType;
+    this.setState({answerGiven: false, currentQuestion: this.state.nextQuestion, questionType: nextQuestionType});
   }
 
   handleClick(event) {
