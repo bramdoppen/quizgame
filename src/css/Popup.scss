@@ -4,15 +4,21 @@
   }
 
   p {
-    border: 1px solid #333;
-    margin: 16px auto;
-    padding: 10px;
+    margin: 6px 50px;
+    padding: 15px 90px;
+    min-height: 54px;
+    border-radius: 18px;
+    font-weight: 600;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #ddd;
+    background-color: #F1F1F1;
+    color: #0A619C;
+
+    display:inline-block;
+
 
     &:hover,
     &:focus {

@@ -59,15 +59,16 @@ class QuestionsWrapper extends Component {
   render() {
     return (
       <div className="QuestionsWrapper">
-          <Tijdlijn
-            answer={this.state.answer}
-          />
+          {/*<Tijdlijn*/}
+            {/*answer={this.state.answer}*/}
+          {/*/>*/}
           <Questions
             data={this.props.data[this.state.currentQuestion]}
             stateSwitch={this.state.answerGiven}
             handleUserAnswer={this.handleUserAnswer}
             closePopup={this.closePopup}
           />
+          <Dock />
       </div>
     );
   }

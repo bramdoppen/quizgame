@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {SortableContainer, SortableElement, arrayMove} from 'react-sortable-hoc';
-import questionsData from './quiz/quiz-data.json';
 import './css/components/reorder.css';
+import './css/Answer.css';
 
 
 // in order to work: npm install react-sortable-hoc --save
 
 const SortableItem = SortableElement(({value}) =>
-    <li>{value}</li>
+    <li className="Answer">{value}</li>
 );
 
 const SortableList = SortableContainer(({items}) => {
@@ -23,16 +23,35 @@ const SortableList = SortableContainer(({items}) => {
 });
 
 class SortableComponent extends Component {
-    state = {
-        items: questionsData[this.props.whichArray].answers,
+    constructor(props) {
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this);
     };
+
+    state = {
+        items: this.props.data.answers,
+    };
+
     onSortEnd = ({oldIndex, newIndex}) => {
         this.setState({
             items: arrayMove(this.state.items, oldIndex, newIndex),
         });
+
     };
+
+    handleClick(){
+        this.props.handleUserAnswer(this.state.items.toString());
+    };
+
     render() {
-        return <SortableList items={this.state.items} lockAxis="y" onSortEnd={this.onSortEnd} />;
+        return (
+            <div>
+                <h1>{this.props.data.question}</h1>
+                <SortableList items={this.state.items} lockAxis="y" onSortEnd={this.onSortEnd} />
+                <button onClick={this.handleClick}>Submit</button>
+            </div>
+        );
     }
 }
 
