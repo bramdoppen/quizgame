@@ -25,7 +25,7 @@ class Popup extends Component {
       <div className='Popup'>
       <Sound
           url="/sound/screem.wav"
-          playStatus={this.props.PlayDeadSound ? Sound.status.PLAYING : ''}
+          playStatus={this.props.PlayDeadSound ? Sound.status.PLAYING : Sound.status.STOPPED}
           playFromPosition={300 /* in milliseconds */}
           onLoading={this.handleSongLoading}
           onPlaying={this.handleSongPlaying}
