@@ -22,10 +22,10 @@ class QuestionsWrapper extends Component {
       questionType: questionType,
       answerGiven: false,
       answerNummer: 0,
-      answer: "miep",
+      answer: "meep",
       nextQuestion: 0,
-      PopupData:"",
-      blood: false,
+      popupData:"",
+      bloed: false,
     };
 
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
@@ -41,10 +41,10 @@ class QuestionsWrapper extends Component {
     if(currentQuestion.questionType !== "REORDER" ) {
       this.setState({
         nextQuestion: this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion,
-        PopupData: this.props.data[this.state.currentQuestion].answers[answerNumber].message,
+        popupData: this.props.data[this.state.currentQuestion].answers[answerNumber].message,
         answerGiven: true,
         answer: givenAnswers,
-        blood: this.props.data[this.state.currentQuestion].answers[answerNumber].bloed,
+        bloed: this.props.data[this.state.currentQuestion].answers[answerNumber].bloed,
       });
     } else {
       console.log("question type is reorder");
@@ -57,6 +57,7 @@ class QuestionsWrapper extends Component {
       answerGiven: false,
       currentQuestion: this.state.nextQuestion,
       questionType: nextQuestionType,
+      bloed: false,
     });
   }
 
@@ -66,22 +67,22 @@ class QuestionsWrapper extends Component {
 
   render() {
     return (
-      <div className="QuestionsWrapper">
-          <Tijdlijn PopupData={this.state.PopupData}/>
-          <Sound
-              url="/sound/background.mp3"
-              playStatus={Sound.status.PLAYING}
-              playFromPosition={300 /* in milliseconds */}
-              onLoading={this.handleSongLoading}
-              onPlaying={this.handleSongPlaying}
-              onFinishedPlaying={this.handleSongFinishedPlaying}
-          />
+      <div className={'QuestionsWrapper' + (this.state.bloed ? ' bloed' : '')}>
+        <Tijdlijn PopupData={this.state.popupData}/>
+        <Sound
+          url="/sound/background.mp3"
+          playStatus={Sound.status.PLAYING}
+          playFromPosition={300 /* in milliseconds */}
+          onLoading={this.handleSongLoading}
+          onPlaying={this.handleSongPlaying}
+          onFinishedPlaying={this.handleSongFinishedPlaying}
+        />
         <Questions
           data={this.props.data[this.state.currentQuestion]}
           stateSwitch={this.state.answerGiven}
           handleUserAnswer={this.handleUserAnswer}
           closePopup={this.closePopup}
-          PopupData={this.state.PopupData}
+          PopupData={this.state.popupData}
         />
         <Dock />
       </div>
