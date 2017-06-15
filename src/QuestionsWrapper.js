@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Questions from './Questions';
 import Dock from "./Dock.js";
-
+import Sound from 'react-sound';
 
 class QuestionsWrapper extends Component {
   static get propTypes() {
@@ -60,6 +60,14 @@ class QuestionsWrapper extends Component {
   render() {
     return (
       <div className="QuestionsWrapper">
+          <Sound
+              url="/sound/background.mp3"
+              playStatus={Sound.status.PLAYING}
+              playFromPosition={300 /* in milliseconds */}
+              onLoading={this.handleSongLoading}
+              onPlaying={this.handleSongPlaying}
+              onFinishedPlaying={this.handleSongFinishedPlaying}
+          />
         <Questions
           data={this.props.data[this.state.currentQuestion]}
           stateSwitch={this.state.answerGiven}
