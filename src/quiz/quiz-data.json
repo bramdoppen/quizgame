@@ -16,7 +16,7 @@
         "choice": "img/kameleonkind.jpg",
         "nextQuestion": 0,
         "message": "Option currently unavailable",
-        "bloed": true
+        "dead": true
       }
     ],
     "questionType": "IMG",
@@ -46,7 +46,7 @@
         "message": "Old lady does not have a heart attack, although the signs look very much like it. However she has a dangerously high blood pressure."
       }
     ],
-    "questionType": "MC",
+    "questionType": "REORDER",
     "tip": "Just choose something, it's not that hard now, is it?"
   },
   {

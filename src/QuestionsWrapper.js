@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Questions from './Questions';
-import Dock from "./Dock.js";
+import Dock from "./Dock";
 import Tijdlijn from "./Tijdlijn";
 import Sound from 'react-sound';
 
@@ -25,7 +25,7 @@ class QuestionsWrapper extends Component {
       answer: "meep",
       nextQuestion: 0,
       popupData:"",
-      bloed: false,
+      dead: false,
     };
 
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
@@ -38,17 +38,14 @@ class QuestionsWrapper extends Component {
     const currentQuestion = this.props.data[currentNumberQuestion];
     const givenAnswers = currentQuestion.answers[answerNumber];
 
-    if(currentQuestion.questionType !== "REORDER" ) {
-      this.setState({
-        nextQuestion: this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion,
-        popupData: this.props.data[this.state.currentQuestion].answers[answerNumber].message,
-        answerGiven: true,
-        answer: givenAnswers,
-        bloed: this.props.data[this.state.currentQuestion].answers[answerNumber].bloed,
-      });
-    } else {
-      console.log("question type is reorder");
-    }
+    this.setState({
+      nextQuestion: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion : 0),
+      popupData: this.props.data[this.state.currentQuestion].answers[answerNumber].message,
+      answerGiven: true,
+      answer: givenAnswers,
+      dead: this.props.data[this.state.currentQuestion].answers[answerNumber].dead,
+    });
+
   }
 
   closePopup() {
@@ -57,7 +54,7 @@ class QuestionsWrapper extends Component {
       answerGiven: false,
       currentQuestion: this.state.nextQuestion,
       questionType: nextQuestionType,
-      bloed: false,
+      dead: false,
     });
   }
 
@@ -67,7 +64,7 @@ class QuestionsWrapper extends Component {
 
   render() {
     return (
-      <div className={'QuestionsWrapper' + (this.state.bloed ? ' bloed' : '')}>
+      <div className={'QuestionsWrapper' + (this.state.dead ? ' bloed' : '')}>
         <Tijdlijn PopupData={this.state.popupData}/>
         <Sound
           url="/sound/background.mp3"
@@ -82,12 +79,12 @@ class QuestionsWrapper extends Component {
           stateSwitch={this.state.answerGiven}
           handleUserAnswer={this.handleUserAnswer}
           closePopup={this.closePopup}
+          PlayDeadSound={this.state.dead}
           PopupData={this.state.popupData}
         />
         <Dock />
       </div>
     );
-
   }
 }
 

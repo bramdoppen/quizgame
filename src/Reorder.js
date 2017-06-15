@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import {SortableContainer, SortableElement, arrayMove} from 'react-sortable-hoc';
 
-
-
 // in order to work: npm install react-sortable-hoc --save
 
 const SortableItem = SortableElement(({value}) =>
@@ -21,7 +19,7 @@ const SortableList = SortableContainer(({items}) => {
     );
 });
 
-class SortableComponent extends Component {
+class Reorder extends Component {
     constructor(props) {
         super(props);
 
@@ -54,4 +52,4 @@ class SortableComponent extends Component {
     }
 }
 
-export default SortableComponent;
+export default Reorder;
