@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Questions from './Questions';
 import Dock from "./Dock.js";
+import Tijdlijn from "./Tijdlijn";
 import Sound from 'react-sound';
 
 class QuestionsWrapper extends Component {
@@ -21,7 +22,7 @@ class QuestionsWrapper extends Component {
       questionType: questionType,
       answerGiven: false,
       answerNummer: 0,
-      answer: "meep",
+      answer: "miep",
       nextQuestion: 0,
       PopupData:"",
     };
@@ -60,6 +61,7 @@ class QuestionsWrapper extends Component {
   render() {
     return (
       <div className="QuestionsWrapper">
+          <Tijdlijn PopupData={this.state.PopupData}/>
           <Sound
               url="/sound/background.mp3"
               playStatus={Sound.status.PLAYING}

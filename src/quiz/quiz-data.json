@@ -37,12 +37,12 @@
       {
         "choice": "Test if she has a heart attack",
         "nextQuestion": 4,
-        "message": "Option currently unavailable"
+        "message": "Old lady does not have a heart attack, although the signs look very much like it. However she has a dangerously high blood pressure."
       },
       {
         "choice": "Draw some blood",
         "nextQuestion": 4,
-        "message": "Option currently unavailable"
+        "message": "Old lady does not have a heart attack, although the signs look very much like it. However she has a dangerously high blood pressure."
       }
     ],
     "questionType": "MC",
