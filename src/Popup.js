@@ -23,7 +23,7 @@ class Popup extends Component {
     return (
       <div className='Popup'>
         <h2>{this.props.PopupData}</h2>
-        <p onClick={this.handleClick}>Close</p>
+        <p onClick={this.handleClick}>Next</p>
       </div>
     );
   }
