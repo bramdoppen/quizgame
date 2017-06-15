@@ -25,6 +25,7 @@ class QuestionsWrapper extends Component {
       answer: "miep",
       nextQuestion: 0,
       PopupData:"",
+      blood: false,
     };
 
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
@@ -42,20 +43,25 @@ class QuestionsWrapper extends Component {
         nextQuestion: this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion,
         PopupData: this.props.data[this.state.currentQuestion].answers[answerNumber].message,
         answerGiven: true,
-        answer: givenAnswers
-      })
+        answer: givenAnswers,
+        blood: this.props.data[this.state.currentQuestion].answers[answerNumber].bloed,
+      });
     } else {
-      console.log("question type is reorder")
+      console.log("question type is reorder");
     }
   }
 
   closePopup() {
     const nextQuestionType = this.props.data[this.state.nextQuestion].questionType;
-    this.setState({answerGiven: false, currentQuestion: this.state.nextQuestion, questionType: nextQuestionType});
+    this.setState({
+      answerGiven: false,
+      currentQuestion: this.state.nextQuestion,
+      questionType: nextQuestionType,
+    });
   }
 
   handleClick(event) {
-    this.props.answerClicked(this.props.number , this.props.currentQuestion)
+    this.props.answerClicked(this.props.number , this.props.currentQuestion);
   }
 
   render() {
@@ -80,6 +86,7 @@ class QuestionsWrapper extends Component {
         <Dock />
       </div>
     );
+
   }
 }
 

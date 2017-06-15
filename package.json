@@ -7,6 +7,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-drag-and-drop": "^2.4.0",
+    "react-player": "^0.18.0",
     "react-simple-popover": "^0.2.0",
     "react-sortable-hoc": "^0.6.3",
     "react-sound": "^0.6.1"

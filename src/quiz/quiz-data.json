@@ -15,7 +15,8 @@
       {
         "choice": "img/kameleonkind.jpg",
         "nextQuestion": 0,
-        "message": "Option currently unavailable"
+        "message": "Option currently unavailable",
+        "bloed": true
       }
     ],
     "questionType": "IMG",
