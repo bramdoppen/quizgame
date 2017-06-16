@@ -4,6 +4,7 @@ import Questions from './Questions';
 import Dock from "./Dock";
 import Tijdlijn from "./Tijdlijn";
 import Sound from 'react-sound';
+import Navbar from './Navbar';
 
 class QuestionsWrapper extends Component {
   static get propTypes() {
@@ -26,8 +27,10 @@ class QuestionsWrapper extends Component {
       nextQuestion: 0,
       popupData:"",
       dead: false,
+      playStatus: Sound.status.PLAYING,
     };
 
+    this.musicPause = this.musicPause.bind(this);
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
     this.closePopup = this.closePopup.bind(this);
   }
@@ -58,22 +61,33 @@ class QuestionsWrapper extends Component {
     });
   }
 
-  handleClick(event) {
-    this.props.answerClicked(this.props.number , this.props.currentQuestion);
+  musicPause() {
+      if(this.state.playStatus === Sound.status.PLAYING) {
+          this.setState({
+              playStatus: Sound.status.PAUSED
+          })
+      } else {
+          this.setState({
+              playStatus: Sound.status.PLAYING
+          })
+      }
   }
 
   render() {
     return (
-      <div className={'QuestionsWrapper' + (this.state.dead ? ' bloed' : '')}>
-        <Tijdlijn PopupData={this.state.popupData}/>
-        <Sound
-          url="/sound/background.mp3"
-          playStatus={Sound.status.PLAYING}
-          playFromPosition={300 /* in milliseconds */}
-          onLoading={this.handleSongLoading}
-          onPlaying={this.handleSongPlaying}
-          onFinishedPlaying={this.handleSongFinishedPlaying}
-        />
+        <div className={'QuestionsWrapper' + (this.state.dead ? ' bloed' : '')}>
+          <Tijdlijn PopupData={this.state.popupData}/>
+          <Sound
+              url="/sound/background.mp3"
+              playStatus={this.state.playStatus}
+              playFromPosition={300 /* in milliseconds */}
+              onLoading={this.handleSongLoading}
+              onPlaying={this.handleSongPlaying}
+              onFinishedPlaying={this.handleSongFinishedPlaying}
+          />
+          <Navbar
+              answerClicked={this.musicPause}
+          />
         <Questions
           data={this.props.data[this.state.currentQuestion]}
           stateSwitch={this.state.answerGiven}
