@@ -1,0 +1,53 @@
+.WelcomeComponent {
+  width:100vw;
+  height:100vh;
+  @include allAbsolute;
+  position:fixed;
+  z-index:100;
+  background:rgba(0, 0, 0, 0.3);
+
+  [class$="__inner"]{
+    width: 900px;
+    position: fixed;
+    background: white;
+    height: 400px;
+    border-radius:25px;
+    margin:auto;
+    @include allAbsolute;
+  }
+  .nurse-image {
+    width: 310px;
+    position: absolute;
+    bottom: -4px;
+    left: -60px;
+    > img {
+      width:100%;
+    }
+  }
+}
+
+.googleSigninButton {
+  cursor:pointer;
+  font-size:14px;
+  height:40px;
+  box-shadow:0px 1px 3px rgba(0, 0, 0, 0.24);
+  display:inline-block;
+  color:#757575;
+  border-radius:2px;
+  width:185px;
+  font-weight:600;
+  font-family: 'Roboto', sans-serif;
+  .logo {
+    height:18px;
+    width:18px;
+    left: 6px;
+    padding-right: 24px;
+    top: 10px;
+    position: relative;
+  }
+  span {
+    position: relative;
+    top: 6px;
+  }
+
+}
