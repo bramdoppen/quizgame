@@ -1,14 +1,20 @@
 .Afbeeldingen {
+  min-height: 401px;
+
   img {
     display: inline-block;
     margin: 8px;
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     transition: transform 0.15s;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 
     &:hover {
       border: 5px solid #333;
-      transform: scale(1.1) translateY(-2.5%);
+      margin: 3px;
+      opacity: 1;
+      filter: alpha(opacity=100);
     }
   }
 }

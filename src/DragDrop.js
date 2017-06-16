@@ -34,7 +34,8 @@ class DragDrop extends Component {
                         onDrop={this.onDrop.bind(this)}
                         onDragEnter={this.onDragEnter.bind(this)}
                         onDragLeave={this.onDragLeave.bind(this)}>
-                        <div style={{textAlign:'center', lineHeight:'30px'}}>{this.state.dropped}</div>
+                        <div>{this.state.dropped}</div>
+                        Drop your word here
                     </Droppable>
                 </h1>
                 <ul className="draggable-list">{draggable}</ul>

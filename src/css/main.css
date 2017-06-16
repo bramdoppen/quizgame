@@ -11,11 +11,8 @@ body {
 
 .Droppable {
   border-bottom: 5px solid #bdbdbd;
-  min-width: 140px;
-  height: 42px;
-  padding: 7px 10px;
-  position: absolute;
-  display: inline-block; }
+  display: inline-block;
+  color: #6f0; }
 
 ul.draggable-list {
   list-style-type: none;
@@ -24,15 +21,26 @@ ul.draggable-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 50%;
   margin: auto;
   flex-wrap: wrap; }
   ul.draggable-list > li {
+    font-size: 22px;
     margin-bottom: 20px;
-    max-width: 49%; }
-    ul.draggable-list > li div {
-      padding: 10px 20px;
-      border: 3px solid #bdbdbd; }
+    width: 80%;
+    margin: 6px 50px;
+    font-weight: 600;
+    padding: 13px 20px;
+    min-height: 93px;
+    border-radius: 18px;
+    background-color: #F1F1F1;
+    border: 3px solid #333;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    ul.draggable-list > li:hover, ul.draggable-list > li:focus, ul.draggable-list > li:active {
+      background-color: #E4E4E4; }
 
 .loginButton {
   position: absolute;
@@ -84,15 +92,21 @@ ul {
   margin: 0;
   list-style-type: none; }
 
-.Afbeeldingen img {
-  display: inline-block;
-  margin: 8px;
-  height: 150px;
-  width: 150px;
-  transition: transform 0.15s; }
-  .Afbeeldingen img:hover {
-    border: 5px solid #333;
-    transform: scale(1.1) translateY(-2.5%); }
+.Afbeeldingen {
+  min-height: 401px; }
+  .Afbeeldingen img {
+    display: inline-block;
+    margin: 8px;
+    height: 250px;
+    width: 250px;
+    transition: transform 0.15s;
+    opacity: 0.5;
+    filter: alpha(opacity=50); }
+    .Afbeeldingen img:hover {
+      border: 5px solid #333;
+      margin: 3px;
+      opacity: 1;
+      filter: alpha(opacity=100); }
 
 .Answer {
   margin: 6px 50px;
@@ -321,7 +335,7 @@ ul {
   padding: 16px;
   background-color: #fff;
   color: #3498DB;
-  border-radius: 25px 25px 0 0;
+  border-radius: 25px;
   box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.19);
   overflow: scroll; }
   .Tijdlijn li {
@@ -332,6 +346,9 @@ ul {
     .Tijdlijn {
       width: auto;
       margin: 16px; } }
+
+::-webkit-scrollbar {
+  display: none; }
 
 .App {
   position: fixed;

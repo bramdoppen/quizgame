@@ -40,10 +40,10 @@ class QuestionsWrapper extends Component {
 
     this.setState({
       nextQuestion: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion : 0),
-      popupData: this.props.data[this.state.currentQuestion].answers[answerNumber].message,
+      popupData: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].message : "We dont have time for this!!"),
       answerGiven: true,
       answer: givenAnswers,
-      dead: this.props.data[this.state.currentQuestion].answers[answerNumber].dead,
+      dead: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].dead : false),
     });
 
   }
@@ -68,7 +68,7 @@ class QuestionsWrapper extends Component {
         <Tijdlijn PopupData={this.state.popupData}/>
         <Sound
           url="/sound/background.mp3"
-          playStatus={Sound.status.PLAYING}
+          playStatus={Sound.status.STOPPED}
           playFromPosition={300 /* in milliseconds */}
           onLoading={this.handleSongLoading}
           onPlaying={this.handleSongPlaying}
