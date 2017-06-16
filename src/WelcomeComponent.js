@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import googlelogo from './img/logogoogle.png';
-import nurseimg from './img/icons/nurse.svg';
+//import nurseimg from './img/icons/nurse.svg';
 
 class Welcome extends Component {
     constructor(props) {
@@ -17,7 +17,7 @@ class Welcome extends Component {
                     <h3>Houd het hoofd koel en zorg dat je patienten blijven leven!</h3>
                     {/*{this.props.name}*/}
                     <div className="googleSigninButton"><img className="logo" src={googlelogo} /><span>Login with Google</span></div>
-                    <div className="nurse-image"><img src={nurseimg}/></div>
+                    {/*<div className="nurse-image"><img src={nurseimg}/></div>*/}
                 </div>
 
             </div>

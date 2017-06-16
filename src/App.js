@@ -4,7 +4,7 @@ import './css/main.css';
 import Navbar from "./Navbar";
 import QuestionsWrapper from "./QuestionsWrapper.js";
 import FirebaseGoogleAuth from "./FirebaseAuth";
-import Welcome from "./WelcomeComponent";
+//import Welcome from "./WelcomeComponent";
 // import SortableComponent from './Reorder';
 
 //json
@@ -28,8 +28,7 @@ class App extends Component {
     return (
 
       <div className="App" onClick={this.Checker}>
-          <Welcome name={this.state.bram}/>
-
+        {/*<Welcome name={this.state.bram}/>*/}
         <Navbar />
         <FirebaseGoogleAuth />
         <div className="container">

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
 body {
   margin: 0;
   padding: 10px;
@@ -252,6 +253,18 @@ ul {
     -webkit-box-shadow: 2px 2px 2px #222;
     -moz-box-shadow: 2px 2px 2px #222;
     box-shadow: 2px 2px 2px #222; }
+  .Navbar button {
+    position: absolute;
+    left: 10px;
+    background-color: #FFF;
+    border: none;
+    color: #3498db;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; }
 
 .PopOver {
   position: absolute;
@@ -349,6 +362,59 @@ ul {
 
 ::-webkit-scrollbar {
   display: none; }
+
+.WelcomeComponent {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3); }
+  .WelcomeComponent [class$="__inner"] {
+    width: 900px;
+    position: fixed;
+    background: white;
+    height: 400px;
+    border-radius: 25px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .WelcomeComponent .nurse-image {
+    width: 310px;
+    position: absolute;
+    bottom: -4px;
+    left: -60px; }
+    .WelcomeComponent .nurse-image > img {
+      width: 100%; }
+
+.googleSigninButton {
+  cursor: pointer;
+  font-size: 14px;
+  height: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24);
+  display: inline-block;
+  color: #757575;
+  border-radius: 2px;
+  width: 185px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif; }
+  .googleSigninButton .logo {
+    height: 18px;
+    width: 18px;
+    left: 6px;
+    padding-right: 24px;
+    top: 10px;
+    position: relative; }
+  .googleSigninButton span {
+    position: relative;
+    top: 6px; }
 
 .App {
   position: fixed;

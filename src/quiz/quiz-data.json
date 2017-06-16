@@ -15,7 +15,8 @@
       {
         "choice": "img/kameleonkind.jpg",
         "nextQuestion": 0,
-        "message": "Option currently unavailable"
+        "message": "Option currently unavailable",
+        "dead": true
       }
     ],
     "questionType": "IMG",
@@ -45,7 +46,7 @@
         "message": "Old lady does not have a heart attack, although the signs look very much like it. However she has a dangerously high blood pressure."
       }
     ],
-    "questionType": "MC",
+    "questionType": "REORDER",
     "tip": "Just choose something, it's not that hard now, is it?"
   },
   {
@@ -109,28 +110,6 @@
     "questionType": "MC",
     "tip": "Just choose something, it's not that hard now, is it?"
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "question": "5: From here on starts the baby with swollen head/neck story. It's not completely written yet. ",
     "answers": [
@@ -154,7 +133,7 @@
     "tip": "Uhm, you can also do nothing and let him die... "
   },
   {
-    "question": "How do you want to proceed? Choose an order in which to continue.  ",
+    "question": "How do you want to proceed? Choose an order in which to continue. REORDER QUESTION",
     "answers": [
       {
         "choice": "Draw blood",
@@ -249,24 +228,6 @@
     "questionType": "DD",
     "tip": "Choose who to check on"
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "question": "11: From here on starts the kid with chameleon story. It's not written yet. Too bad",
     "answers": [
@@ -279,8 +240,4 @@
     "questionType": "MC",
     "tip": "Just choose something, it's not that hard now, is it?"
   }
-
-
-
-
 ]
