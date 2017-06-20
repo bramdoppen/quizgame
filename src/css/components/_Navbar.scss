@@ -45,15 +45,18 @@
   button {
     position: absolute;
     left: 10px;
-    background-color: #FFF;
     border: none;
-    color: #3498db;
-    padding: 10px 20px;
+    background:transparent;
+    border:0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     cursor: pointer;
+
+    .sound {
+      width: 30px;
+      height: 30px;
+    }
   }
   
 

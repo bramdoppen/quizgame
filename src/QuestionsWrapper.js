@@ -67,7 +67,7 @@ class QuestionsWrapper extends Component {
 
   musicPause() {
     this.setState({
-      playStatus: (this.state.playStatus === Sound.status.PLAYING ? Sound.status.PAUSED : Sound.status.PLAYING )
+      playStatus: (this.state.playStatus === Sound.status.PLAYING ? Sound.status.PAUSE : Sound.status.PLAYING )
     });
   }
 
@@ -84,6 +84,7 @@ class QuestionsWrapper extends Component {
         />
         <Navbar
             answerClicked={this.musicPause}
+            playIcon={this.state.playStatus === Sound.status.PLAYING ? "Off" : "On"}
         />
         <Questions
           data={this.props.data[this.state.currentQuestion]}
