@@ -14,9 +14,17 @@
     border-radius:25px;
     margin:auto;
     @include allAbsolute;
+    @include displayFlex(column, center);
+
+    h3 {
+      padding: 0 200px;
+      font-weight: 300;
+      margin-top:0;
+    }
+
   }
   .nurse-image {
-    width: 310px;
+    width: 277px;
     position: absolute;
     bottom: -4px;
     left: -60px;
@@ -37,6 +45,7 @@
   width:185px;
   font-weight:600;
   font-family: 'Roboto', sans-serif;
+  margin: 26px auto;
   .logo {
     height:18px;
     width:18px;
