@@ -3,6 +3,7 @@
   margin: auto;
 
   .Answer {
+    min-height:60px;
     &:after {
       content: "";
       border-top: 2px solid #D3D3D3;

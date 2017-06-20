@@ -9,6 +9,8 @@ class Dock extends Component {
                 <DockItem name="Patient Room 2"  status="Empty"      statusStyle="status_empty" />
                 <DockItem name="Patient Room 3"  status="Empty"      statusStyle="status_empty flatline" />
                 <DockItem name="MRI Scanner"     status="6 waiting"  statusStyle="status_warning" />
+                <DockItem name="CT Scanner"      status="Free"       statusStyle="status_ok" />
+                <DockItem name="Lab"             status="5min"       statusStyle="status_warning" />
             </div>
         );
     }
