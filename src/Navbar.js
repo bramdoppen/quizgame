@@ -1,6 +1,3 @@
-/**
- * Created by Charly on 2-6-2017.
- */
 import React, { Component } from 'react';
 import menuPlaatje from './img/menu-options.png';
 import PropTypes from 'prop-types';

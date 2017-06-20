@@ -41,12 +41,16 @@ class QuestionsWrapper extends Component {
     const currentQuestion = this.props.data[currentNumberQuestion];
     const givenAnswers = currentQuestion.answers[answerNumber];
 
+    const nextQuestion = this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion;
+    const popupDataMessage = this.props.data[this.state.currentQuestion].answers[answerNumber].message;
+    const youDead = this.props.data[this.state.currentQuestion].answers[answerNumber].dead;
+
     this.setState({
-      nextQuestion: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion : 0),
-      popupData: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].message : "We dont have time for this!!"),
       answerGiven: true,
       answer: givenAnswers,
-      dead: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].dead : false),
+      dead: (currentQuestion.questionType !== "REORDER" ? youDead : false),
+      nextQuestion: (currentQuestion.questionType !== "REORDER" ? nextQuestion : 0),
+      popupData: (currentQuestion.questionType !== "REORDER" ? popupDataMessage : "We dont have time for this!!"),
     });
 
   }
@@ -54,40 +58,33 @@ class QuestionsWrapper extends Component {
   closePopup() {
     const nextQuestionType = this.props.data[this.state.nextQuestion].questionType;
     this.setState({
+      dead: false,
       answerGiven: false,
       currentQuestion: this.state.nextQuestion,
       questionType: nextQuestionType,
-      dead: false,
     });
   }
 
   musicPause() {
-      if(this.state.playStatus === Sound.status.PLAYING) {
-          this.setState({
-              playStatus: Sound.status.PAUSED
-          })
-      } else {
-          this.setState({
-              playStatus: Sound.status.PLAYING
-          })
-      }
+    this.setState({
+      playStatus: (this.state.playStatus === Sound.status.PLAYING ? Sound.status.PAUSED : Sound.status.PLAYING )
+    });
   }
 
   render() {
     return (
-        <div className={'QuestionsWrapper' + (this.state.dead ? ' bloed' : '')}>
-          <Tijdlijn PopupData={this.state.popupData}/>
-          <Sound
-              url="/sound/background.mp3"
-              playStatus={this.state.playStatus}
-              playFromPosition={300 /* in milliseconds */}
-              onLoading={this.handleSongLoading}
-              onPlaying={this.handleSongPlaying}
-              onFinishedPlaying={this.handleSongFinishedPlaying}
-          />
-          <Navbar
-              answerClicked={this.musicPause}
-          />
+      <div className={'QuestionsWrapper' + (this.state.dead ? ' bloed' : '')}>
+        <Tijdlijn PopupData={this.state.popupData}/>
+        <Sound
+            url="/sound/background.mp3"
+            playStatus={this.state.playStatus}
+            onLoading={this.handleSongLoading}
+            onPlaying={this.handleSongPlaying}
+            onFinishedPlaying={this.handleSongFinishedPlaying}
+        />
+        <Navbar
+            answerClicked={this.musicPause}
+        />
         <Questions
           data={this.props.data[this.state.currentQuestion]}
           stateSwitch={this.state.answerGiven}
@@ -96,8 +93,8 @@ class QuestionsWrapper extends Component {
           PlayDeadSound={this.state.dead}
           PopupData={this.state.popupData}
         />
-        <Dock />
-      </div>
+      <Dock />
+    </div>
     );
   }
 }

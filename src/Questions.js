@@ -12,7 +12,6 @@ class Questions extends Component {
 
   static get propTypes() {
     return {
-      //data: PropTypes.array.isRequired,
       stateSwitch: PropTypes.bool
     };
   }
@@ -35,31 +34,35 @@ class Questions extends Component {
             data={this.props.data}
             handleUserAnswer={this.props.handleUserAnswer} />
         );
-        break;
+      break;
+
       case "IMG":
         renderQuestionType = (
           <Afbeeldingen
             data={this.props.data}
             handleUserAnswer={this.props.handleUserAnswer} />
         );
-        break;
+      break;
+
       case "DD":
         renderQuestionType = (
             <DragDrop
               data={this.props.data}
               handleUserAnswer={this.props.handleUserAnswer} />
         );
-        break;
+      break;
+
       case "REORDER":
         renderQuestionType = (
             <Reorder
               data={this.props.data}
               handleUserAnswer={this.props.handleUserAnswer} />
         );
-        break;
+      break;
+
       default:
         console.error(`Invalid questionType: ${this.props.data.questionType}`);
-        break;
+      break;
     }
 
     if (!this.props.stateSwitch) {

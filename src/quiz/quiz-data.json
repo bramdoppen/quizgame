@@ -133,7 +133,7 @@
     "tip": "Uhm, you can also do nothing and let him die... "
   },
   {
-    "question": "How do you want to proceed? Choose an order in which to continue. REORDER QUESTION",
+    "question": "How do you want to proceed? Choose an order in which to continue.  ",
     "answers": [
       {
         "choice": "Draw blood",
