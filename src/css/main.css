@@ -13,7 +13,8 @@ body {
 .Droppable {
   border-bottom: 5px solid #bdbdbd;
   display: inline-block;
-  color: #6f0; }
+  color: #6f0;
+  margin-left: 12px; }
 
 ul.draggable-list {
   list-style-type: none;
@@ -25,17 +26,21 @@ ul.draggable-list {
   margin: auto;
   flex-wrap: wrap; }
   ul.draggable-list > li {
-    font-size: 22px;
-    margin-bottom: 20px;
-    width: 80%;
-    margin: 6px 50px;
-    font-weight: 600;
-    padding: 13px 20px;
-    min-height: 93px;
+    margin: 6px 130px;
+    padding: 13px 50px;
+    min-height: 60px;
     border-radius: 18px;
-    background-color: #F1F1F1;
-    border: 3px solid #333;
+    font-weight: 600;
+    width: 100%;
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #F1F1F1;
+    color: #0A619C;
+    font-size: 18px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,18 +65,20 @@ ul.draggable-list {
 .Sortable {
   width: 80%;
   margin: auto; }
-  .Sortable .Answer:after {
-    content: "";
-    border-top: 2px solid #D3D3D3;
-    border-bottom: 2px solid #D3D3D3;
-    background: transparent;
-    width: 21px;
-    height: 9px;
-    position: absolute;
-    right: 27px;
-    top: 2px;
-    bottom: 0;
-    margin: auto; }
+  .Sortable .Answer {
+    min-height: 60px; }
+    .Sortable .Answer:after {
+      content: "";
+      border-top: 2px solid #D3D3D3;
+      border-bottom: 2px solid #D3D3D3;
+      background: transparent;
+      width: 21px;
+      height: 9px;
+      position: absolute;
+      right: 27px;
+      top: 2px;
+      bottom: 0;
+      margin: auto; }
   .Sortable button {
     margin: 6px 50px;
     padding: 20px 70px;
@@ -111,8 +118,8 @@ ul {
 
 .Answer {
   margin: 6px 50px;
-  padding: 13px 20px;
-  min-height: 93px;
+  padding: 13px 50px;
+  min-height: 82px;
   border-radius: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -122,7 +129,7 @@ ul {
   user-select: none;
   background-color: #F1F1F1;
   color: #0A619C;
-  font-size: 22px;
+  font-size: 18px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -138,7 +145,7 @@ ul {
   right: 0;
   background: white;
   width: 1000px;
-  height: 132px;
+  height: 112px;
   border-radius: 25px 25px 0 0;
   box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.19);
   padding: 4px 31px;
@@ -154,17 +161,20 @@ ul {
     box-sizing: initial;
     margin-right: 21px;
     top: 7px; }
+    .dock .dock__item:last-child {
+      margin-right: 0;
+      padding-right: 0; }
     .dock .dock__item p:nth-of-type(1) {
       font-weight: 600;
       color: #333333;
-      font-size: 17px; }
+      font-size: 14px; }
     .dock .dock__item p:nth-of-type(2) span {
-      font-size: 16px;
+      font-size: 14px;
       display: block;
       font-weight: 600; }
       .dock .dock__item p:nth-of-type(2) span:nth-of-type(1) {
         color: #B4B4B4;
-        font-size: 12px;
+        font-size: 10px;
         text-transform: uppercase; }
     .dock .dock__item[class*="status_empty"] p:nth-of-type(2) span:nth-of-type(2) {
       color: #d4d4d4; }
@@ -206,7 +216,7 @@ ul {
       right: 0;
       margin: auto;
       animation: flatline-animation 2s infinite; }
-    .dock .dock__item:after {
+    .dock .dock__item:not(:last-child):after {
       content: "";
       border-right: 2px solid #F3F3F3;
       display: block;
@@ -275,7 +285,7 @@ ul {
     width: 65px; }
 
 .Popup h2 {
-  font-size: 2em;
+  font-size: 1.6em;
   padding: 15px 80px; }
 .Popup p {
   margin: 6px 50px 36px 50px;
@@ -315,7 +325,7 @@ ul {
   .Questions ul {
     list-style-type: none;
     padding: 0;
-    margin: 40px 0; }
+    margin: 25px 0; }
   .Questions h1 {
     margin: 0 auto;
     font-size: 22px;
@@ -325,6 +335,28 @@ ul {
     text-align: left;
     padding: 34px 50px 30px 50px;
     border-radius: 25px 25px 0 0; }
+  .Questions button {
+    margin: 6px 50px 36px 50px;
+    padding: 15px 90px;
+    border-radius: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #F1F1F1;
+    color: #0A619C;
+    border: 0;
+    font-size: 16px;
+    font-family: "Source Sans Pro", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    display: inline-block; }
+    .Questions button:hover, .Questions button:focus {
+      background-color: #555;
+      color: #FFF; }
+    .Questions button:active {
+      background-color: #333;
+      color: #FFF; }
 
 .QuestionsWrapper {
   display: flex;
@@ -340,17 +372,22 @@ ul {
   background-position: center; }
 
 .Tijdlijn {
-  flex: none;
   width: 300px;
   min-height: 450px;
-  margin: 32px;
-  margin-left: 0;
   padding: 16px;
   background-color: #fff;
   color: #3498DB;
-  border-radius: 25px;
+  border-radius: 0 25px 25px 0;
   box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.19);
-  overflow: scroll; }
+  overflow: scroll;
+  position: fixed;
+  left: 0;
+  margin-top: 50vh;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
   .Tijdlijn li {
     list-style: none;
     border-bottom: 2px solid #F3F3F3;
@@ -385,9 +422,16 @@ ul {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .WelcomeComponent [class$="__inner"] h3 {
+      padding: 0 200px;
+      font-weight: 300;
+      margin-top: 0; }
   .WelcomeComponent .nurse-image {
-    width: 310px;
+    width: 277px;
     position: absolute;
     bottom: -4px;
     left: -60px; }
@@ -404,7 +448,8 @@ ul {
   border-radius: 2px;
   width: 185px;
   font-weight: 600;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  margin: 26px auto; }
   .googleSigninButton .logo {
     height: 18px;
     width: 18px;
