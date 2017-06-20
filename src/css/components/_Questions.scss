@@ -35,4 +35,34 @@ $text-color: #0A619C;
     padding: 34px 50px 30px 50px;
     border-radius: 25px 25px 0 0;
   }
+  button {
+    margin: 6px 50px 36px 50px;
+    padding: 15px 90px;
+    border-radius: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #F1F1F1;
+    color: #0A619C;
+    border: 0;
+    font-size: 16px;
+    font-family:$main-font-stack;
+
+    display:inline-block;
+
+
+    &:hover,
+    &:focus {
+      background-color: #555;
+      color: #FFF;
+    }
+
+    &:active {
+      background-color: #333;
+      color: #FFF;
+    }
+  }
 }

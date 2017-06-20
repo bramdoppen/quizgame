@@ -9,6 +9,7 @@
   border-bottom: 5px solid #bdbdbd;
   display: inline-block;
   color: #6f0;
+  margin-left: 12px;
 }
 
 ul.draggable-list {
@@ -22,17 +23,21 @@ ul.draggable-list {
   flex-wrap:wrap;
 
   > li {
-    font-size:22px;
-    margin-bottom: 20px;
-    width: 80%;
-    margin: 6px 50px;
-    font-weight: 600;
-    padding: 13px 20px;
-    min-height: 93px;
+    margin: 6px 130px;
+    padding: 13px 50px;
+    min-height: 60px;
     border-radius: 18px;
-    background-color: #F1F1F1;
-    border: 3px solid #333;
+    font-weight: 600;
+    width:100%;
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #F1F1F1;
+    color: #0A619C;
+    font-size:18px;
+    position: relative;
 
     display:flex;
     flex-direction:column;
@@ -47,41 +52,3 @@ ul.draggable-list {
   }
 }
 
-
-// .DragDrop {
-//   h1 {
-//     position: relative;
-//     margin-bottom: 60px;
-//     padding-right: 70px;
-//   }
-// }
-// .Droppable {
-//   border-bottom: 5px solid #bdbdbd;
-//   min-width: 140px;
-//   height: 42px;
-//   padding: 7px 10px;
-//   position: absolute;
-//   display: inline-block;
-// }
-
-// ul.draggable-list {
-//   list-style-type: none;
-//   padding: 0;
-//   margin: 0;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   width: 50%;
-//   margin: auto;
-//   flex-wrap:wrap;
-
-//   > li {
-//     margin-bottom: 20px;
-//     max-width: 49%;
-
-//     div {
-//       padding: 10px 20px;
-//       border: 3px solid #bdbdbd;
-//     }
-//   }
-// }

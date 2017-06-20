@@ -17,6 +17,7 @@ const database = firebase
 
 let provider = new firebase.auth.GoogleAuthProvider();
 
+let fbusername = "";
 
 
 class Welcome extends Component {
@@ -35,8 +36,8 @@ class Welcome extends Component {
             // This gives you a Google Access Token. You can use it to access the Google API.
             const token = result.credential.accessToken;
             // The signed-in user info.
-            const user = result.user;
-            console.log(user);
+            fbusername = result.user.displayName;
+
 
         }).catch(function(error) {
             // Handle Errors here.
@@ -48,7 +49,6 @@ class Welcome extends Component {
             const credential = error.credential;
         });
         this.setState({loggedin: true});
-
     }
     render() {
         const loggedin = this.state.loggedin;
@@ -59,8 +59,7 @@ class Welcome extends Component {
         }
         else {
             welcomecomp = <div id="WelcomeComponent" className="WelcomeComponent">
-                <div className="WelcomeComponent__inner"><h1>Welkom op je eerste dag</h1><h3>Houd het hoofd koel en zorg dat
-                    je patienten blijven leven!</h3>
+                <div className="WelcomeComponent__inner"><h1>Welcome on your first day</h1><h3>Keep your head cool and your patients alive!</h3>
                     <div className="googleSigninButton" onClick={this.handleLogin}><img className="logo"
                                                                                         src={googlelogo}/><span>Login with Google</span>
                     </div>
