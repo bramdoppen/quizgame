@@ -1,6 +1,6 @@
 [
   {
-    "question": "Three people are entering the Emergency Room. You're the only one on call. Who needs your help first?",
+    "question": "Three people are entering the Emergency Room. You're the only one on call. Who will get your attention?",
     "answers": [
       {
         "choice": "img/tumorbaby.jpg",
@@ -10,13 +10,12 @@
       {
         "choice": "img/dropvrouw3.jpg",
         "nextQuestion": 1,
-        "message": "So this woman, who has what, a few years to go, deserves your attention first? Well, alright, it's your choice. Let's see how you could help her."
+        "message": "So this woman, who looks like she has only a few years to go, obviously still deserves your attention. Alrighty. Let's see how you could help her."
       },
       {
         "choice": "img/kameleonkind.jpg",
-        "nextQuestion": 0,
-        "message": "Option currently unavailable",
-        "dead": true
+        "nextQuestion": 11,
+        "message": "A kid came in by himself, he looks a bit bruised up but he is extremely worried about his chameleon. The poor animal hasn't moved in quite a while."
       }
     ],
     "questionType": "IMG",
@@ -46,7 +45,7 @@
         "message": "Old lady does not have a heart attack, although the signs look very much like it. However she has a dangerously high blood pressure."
       }
     ],
-    "questionType": "REORDER",
+    "questionType": "MC",
     "tip": "Just choose something, it's not that hard now, is it?"
   },
   {
@@ -110,14 +109,31 @@
     "questionType": "MC",
     "tip": "Just choose something, it's not that hard now, is it?"
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "question": "5: From here on starts the baby with swollen head/neck story. It's not completely written yet. ",
     "answers": [
-      {
-        "choice": "Go back to start, this option will be removed after development",
-        "nextQuestion": 0,
-        "message": "Yes. Let's try again."
-      },
       {
         "choice": "Examine the baby",
         "nextQuestion": 6,
@@ -133,7 +149,7 @@
     "tip": "Uhm, you can also do nothing and let him die... "
   },
   {
-    "question": "How do you want to proceed? Choose an order in which to continue.  ",
+    "question": "How do you want to proceed? Choose an order in which to continue. REORDER QUESTION",
     "answers": [
       {
         "choice": "Draw blood",
@@ -158,9 +174,9 @@
     "question": "Choosing not to examine the baby resulted in his death.",
     "answers": [
       {
-        "choice": "Start over",
+        "choice": "Have a cry and try not to kill anyone else",
         "nextQuestion": 0,
-        "message": "Back to the start",
+        "message": "Maybe you can help out on of the other patients.",
         "dead": true
       }
     ],
@@ -195,7 +211,7 @@
     "tip": "Hmm, a brain tumor .. surgery is risky but not impossible. A brain tumor is usually treated by chemotherapy. The chance of a complete recovery is 25% by surgery"
   },
   {
-    "question": "9: During the operation you are being paged by the ER. The chameleon kid has collapsed.",
+    "question": "9: During the operation you are being paged by another doctor. She needs your input on ",
     "answers": [
       {
         "choice": "You can't leave the baby open on the table. Keep operating.",
@@ -203,9 +219,9 @@
         "message": ""
       },
       {
-        "choice": "Call another surgeon to take over surgery and rush to the ER",
+        "choice": "Ask your assistant to take over surgery and rush to the phone to give your colleague some advice",
         "nextQuestion": 9,
-        "message": "There's no way you can wait until the other surgeon is here, luckily the baby is stable so you hurry to the ER."
+        "message": "Luckily the baby is stable so you safely finish the call and go on with the surgery."
       }
     ],
     "questionType": "MC",
@@ -225,19 +241,98 @@
         "message": "Moving on to the old lady."
       }
     ],
-    "questionType": "DD",
+    "questionType": "IMG",
     "tip": "Choose who to check on"
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
-    "question": "11: From here on starts the kid with chameleon story. It's not written yet. Too bad",
+    "question": "11: How could you help the kid with his chameleon?",
     "answers": [
       {
-        "choice": "Go back to start",
-        "nextQuestion": 0,
-        "message": "Yes. Let's try again."
+        "choice": "Send them to a vet, this place is for sick people, not animals",
+        "nextQuestion": 12,
+        "message": "I guess you have a point there. Sending kid to the vet. Bye kiddo!"
+      },
+      {
+        "choice": "Check out the child's bruises",
+        "nextQuestion": 13,
+        "message": "Taking a look at the bruises, poking them softly."
+      },
+      {
+        "choice": "Pretend you are going to examine the chameleon (your first act out of kindness)",
+        "nextQuestion": 14,
+        "message": "You're poking the animal softly to check for response and 'listen' to his heart and lungs (or where you think they are) with a stethoscope"
       }
     ],
     "questionType": "MC",
     "tip": "Just choose something, it's not that hard now, is it?"
+  },
+  {
+    "question": "12: A week later, you receive message that the child has tragically passed away, due to internal injury's that you didn't find, but the good news: the chameleon survived",
+    "answers": [
+      {
+        "choice": "Feel bummed for a bit and then you check on your other patient(s)",
+        "nextQuestion": 0,
+        "message": "Let's see who else we can help.",
+        "dead": true
+      }
+    ],
+    "questionType": "MC",
+    "tip": "I've got nothing to say"
+  },
+  {
+    "question": "13: You took a quick look at the bruises, they are blue and orange-colored.",
+    "answers": [
+      {
+        "choice": "It will heal just fine. Put a band aid on the bigger ones and let him go home",
+        "nextQuestion": 12,
+        "message": "Putting band aids on, just so there won't get any dirt in there. Bye kiddo!"
+      },
+      {
+        "choice": "It doesn't hurt to further examine it. It's not you who has to pay for expensive tests anyway. Ask the kid how he got his bruises",
+        "nextQuestion": 14,
+        "message": "The kid tells you he got his bruises in a fight with some classmates. They were teasing his chameleon."
+      }
+    ],
+    "questionType": "MC",
+    "tip": "Just choose something, it's not that hard now, is it?"
+  },
+  {
+    "question": "14: Fighting could mean internal injuries. You know, the ones you don't see. How are you going to check that?",
+    "answers": [
+      {
+        "choice": "img/mriscan.png",
+        "nextQuestion": 14,
+        "message": ""
+      },
+      {
+        "choice": "img/echomaken.png",
+        "nextQuestion": 14,
+        "message": ""
+      }
+    ],
+    "questionType": "IMG",
+    "tip": ""
   }
+
+
+
+
 ]

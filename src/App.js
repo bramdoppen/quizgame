@@ -18,7 +18,7 @@ class App extends Component {
     return (
 
       <div className="App">
-        <Welcome />
+        {/*<Welcome />*/}
         <Navbar />
         <div className="container">
             <QuestionsWrapper data={questionsData} />

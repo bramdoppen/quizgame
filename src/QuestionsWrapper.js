@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Questions from './Questions';
 import Dock from "./Dock";
-import Tijdlijn from "./Tijdlijn";
 import Sound from 'react-sound';
 import Navbar from './Navbar';
+import Switcher from './NoteHistorySwitcher';
 
 class QuestionsWrapper extends Component {
   static get propTypes() {
@@ -74,7 +74,7 @@ class QuestionsWrapper extends Component {
   render() {
     return (
       <div className={'QuestionsWrapper' + (this.state.dead ? ' bloed' : '')}>
-        <Tijdlijn PopupData={this.state.popupData}/>
+          <Switcher PopupData={this.state.popupData} />
         <Sound
             url="/sound/background.mp3"
             playStatus={this.state.playStatus}
