@@ -27,7 +27,6 @@ class EditNote extends Component {
     };
 
     render(){
-        console.log(this.props.style);
         return( <input
                 type="text"
                 autoFocus={true}

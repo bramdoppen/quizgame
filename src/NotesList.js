@@ -62,7 +62,6 @@ class NotesList extends Component {
                     display: "none"
                 }
             });
-            console.log("Style is nu (if)" + this.state.style);
         }
         if(this.state.style.display === "block"){
 
@@ -74,7 +73,6 @@ class NotesList extends Component {
                     display: "block"
                 }
             });
-            console.log("Style is nu (else)" + this.state.style);
         }
     };
 
