@@ -5,6 +5,7 @@ import Dock from "./Dock";
 import Navbar from './Navbar';
 import NoteHistorySwitcher from './NoteHistorySwitcher';
 import Sound from 'react-sound';
+
 class QuestionsWrapper extends Component {
   static get propTypes() {
     return {
@@ -22,17 +23,17 @@ class QuestionsWrapper extends Component {
       questionType: questionType,
       answerGiven: false,
       answerNummer: 0,
-      answer: "meep",
+      answer: "",
       nextQuestion: 0,
-      popupData:"",
-      dead: true,
-      playStatus: Sound.status.PAUSE,
+      popupData: "",
+      dead: false,
+      playStatus: Sound.status.PLAYING,
       backgroundClass: 'lobby',
     };
 
-    this.musicPause = this.musicPause.bind(this);
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
     this.closePopup = this.closePopup.bind(this);
+    this.musicPause = this.musicPause.bind(this);
   }
 
   handleUserAnswer(answerNumber) {
@@ -53,7 +54,6 @@ class QuestionsWrapper extends Component {
 
   closePopup() {
     const nextQuestionType = this.props.data[this.state.nextQuestion].questionType;
-    console.log(this.props.data[this.state.nextQuestion].background);
     this.setState({
       dead: false,
       answerGiven: false,
@@ -72,7 +72,7 @@ class QuestionsWrapper extends Component {
   render() {
     return (
       <div className={'QuestionsWrapper ' + (this.state.backgroundClass)  }>
-          <NoteHistorySwitcher PopupData={this.state.popupData} />
+        <NoteHistorySwitcher PopupData={this.state.popupData} />
         <Sound
             url="/sound/background.mp3"
             playStatus={this.state.playStatus}

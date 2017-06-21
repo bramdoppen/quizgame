@@ -19,8 +19,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/*<WelcomeComponent />*/}
-        {/*<EndScreen />*/}
+        <WelcomeComponent />
+        <EndScreen />
         <div className="container">
             <QuestionsWrapper data={questionsData} />
         </div>
