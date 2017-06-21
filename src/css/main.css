@@ -159,8 +159,9 @@ ul {
     position: relative;
     padding-right: 23px;
     box-sizing: initial;
-    margin-right: 21px;
-    top: 7px; }
+    margin-right: 21px; }
+    .dock .dock__item > .dock__item {
+      top: 7px; }
     .dock .dock__item:last-child {
       margin-right: 0;
       padding-right: 0; }
@@ -211,11 +212,35 @@ ul {
       background: red;
       border-radius: 50%;
       position: absolute;
-      top: 2px;
-      left: -23px;
+      top: -14px;
+      left: 0;
       right: 0;
       margin: auto;
       animation: flatline-animation 2s infinite; }
+    .dock .dock__item[class*="dead"]:before {
+      content: "Died";
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: white;
+      position: absolute;
+      top: 0px;
+      padding-top: 36px;
+      padding-right: 7px;
+      text-transform: uppercase;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #505050;
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      -webkit-animation: none;
+      animation: none;
+      background-image: url(/static/media/dead-icon.315ee1cb.svg);
+      background-size: 30px;
+      background-position: 44px top;
+      background-repeat: no-repeat;
+      border-radius: 0; }
     .dock .dock__item:not(:last-child):after {
       content: "";
       border-right: 2px solid #F3F3F3;
@@ -406,7 +431,7 @@ ul {
 .notesTimelineSwitch {
   flex: none;
   width: 300px;
-  min-height: 450px;
+  height: 70vh;
   padding: 0 16px 16px 16px;
   background-color: #fff;
   color: #3498DB;

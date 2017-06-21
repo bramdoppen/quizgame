@@ -9,25 +9,37 @@ import WelcomeComponent from "./WelcomeComponent";
 //json
 import questionsData from './quiz/quiz-data.json';
 
+let einde = false;
+
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          background: "hallo"
+          background: "hallo",
+          einde: false
         }
+
+      this.eindeTrigger = this.eindeTrigger.bind(this);
     }
 
-  render() {
-    return (
-      <div className="App">
-        <WelcomeComponent />
-        {/*<EndScreen />*/}
-        <div className="container">
-            <QuestionsWrapper data={questionsData} />
+    eindeTrigger(data){
+      console.log("ik doe ook iets")
+      this.setState({einde: true, eindData: data});
+    }
+
+    render() {
+
+
+      return (
+        <div className="App">
+          <WelcomeComponent />
+          <EndScreen trigger={this.state.einde} eindData={this.state.eindData} />
+          <div className="container">
+              <QuestionsWrapper data={questionsData} eindeTrigger={this.eindeTrigger} />
+          </div>
         </div>
-      </div>
-    );
-  }
+      );
+    }
 }
 
 export default App;

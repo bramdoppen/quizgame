@@ -86,13 +86,13 @@ class DataVerwerker extends Component {
       oldCurrentQuestion = currentQuestion
     }
 
-    if(interactieveData.omaUrgentie >= 5){
+    if(interactieveData.omaUrgentie >= 5 && !interactieveData.omaAfgerond){
       interactieveData.omaOverleden = true;
       interactieveData.omaAfgerond = true;
-    } else if(interactieveData.babyUrgentie >= 5){
+    } else if(interactieveData.babyUrgentie >= 5 && !interactieveData.babyAfgerond){
       interactieveData.babyOverleden = true;
       interactieveData.babyAfgerond = true;
-    } else if(interactieveData.kameleonUrgentie >= 5){
+    } else if(interactieveData.kameleonUrgentie >= 5 && !interactieveData.kameleonAfgerond){
       interactieveData.kameleonOverleden = true;
       interactieveData.kameleonAfgerond = true;
     }

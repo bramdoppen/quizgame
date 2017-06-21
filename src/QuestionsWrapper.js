@@ -83,6 +83,16 @@ class QuestionsWrapper extends Component {
   closePopup() {
     const nextQuestionType = this.props.data[this.state.nextQuestion].questionType;
     console.log(this.props.data[this.state.nextQuestion].background);
+
+    console.log(interactieveData);
+
+    if(interactieveData.kameleonAfgerond
+    && interactieveData.omaAfgerond
+    && interactieveData.babyAfgerond){
+      console.log("ik doe iets")
+      this.props.eindeTrigger(interactieveData);
+    }
+
     this.setState({
       dead: false,
       answerGiven: false,
