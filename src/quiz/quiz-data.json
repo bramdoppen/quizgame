@@ -70,7 +70,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "I would solve the main problem first.",
     "background": "patient"
   },
   {
@@ -94,7 +94,7 @@
       }
     ],
     "questionType": "DD",
-    "tip": "",
+    "tip": "Perhaps the problem is with what she has eaten?",
     "background": "lobby"
   },
   {
@@ -112,7 +112,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "What are you going to do now?",
     "background": "patient"
   },
   {
@@ -125,7 +125,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "Keep calm and breath!",
     "background": "patient"
   },
   {
@@ -143,7 +143,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "An MRI looks promising..",
     "background": "patient"
   },
   {
@@ -161,7 +161,7 @@
       }
     ],
     "questionType": "DD",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "Well the first questions looks interesting doesn't it? But focus on the main problem.",
     "background": "patient"
   },
   {
@@ -184,7 +184,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "Maybe medication will help.",
     "background": "mri"
   },
   {
@@ -215,7 +215,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "What a waste of time!",
     "background": "patient"
   },
 
@@ -404,7 +404,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "What is the problem here? Like what do you think..",
     "background": "lobby"
   },
   {
@@ -437,7 +437,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "Are you sure you don't want to look again?",
     "background": "patient"
   },
   {
@@ -491,7 +491,7 @@
       }
     ],
     "questionType": "DD",
-    "tip": "",
+    "tip": "Remember even death has a heart.",
     "background": "operation"
   },
   {
@@ -509,7 +509,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "",
+    "tip": "You can do it!",
     "background": "mri"
   },
   {
@@ -522,7 +522,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "",
+    "tip": "Take a coffee you deserve it.",
     "background": "operation"
   },
   {
