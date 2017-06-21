@@ -73,16 +73,9 @@ class QuestionsWrapper extends Component {
     return (
       <div className={'QuestionsWrapper ' + (this.state.backgroundClass)  }>
         <NoteHistorySwitcher PopupData={this.state.popupData} />
-        <Sound
-            url="/sound/background.mp3"
-            playStatus={this.state.playStatus}
-            onLoading={this.handleSongLoading}
-            onPlaying={this.handleSongPlaying}
-            onFinishedPlaying={this.handleSongFinishedPlaying}
-        />
         <Navbar
-            answerClicked={this.musicPause}
-            playIcon={this.state.playStatus === Sound.status.PLAYING ? "Off" : "On"}
+          answerClicked={this.musicPause}
+          playIcon={this.state.playStatus === Sound.status.PLAYING ? "Off" : "On"}
         />
         <Questions
           data={this.props.data[this.state.currentQuestion]}
