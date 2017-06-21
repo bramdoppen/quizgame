@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class EditNote extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     checkEnter = (e) => {
         if(e.key === 'Enter') {

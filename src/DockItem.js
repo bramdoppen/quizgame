@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class DockItem extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <div className={"dock__item " + this.props.statusStyle }>
