@@ -41,16 +41,12 @@ class QuestionsWrapper extends Component {
     const currentQuestion = this.props.data[currentNumberQuestion];
     const givenAnswers = currentQuestion.answers[answerNumber];
 
-    const nextQuestion = this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion;
-    const popupDataMessage = this.props.data[this.state.currentQuestion].answers[answerNumber].message;
-    const youDead = this.props.data[this.state.currentQuestion].answers[answerNumber].dead;
-
     this.setState({
       answerGiven: true,
       answer: givenAnswers,
-      dead: (currentQuestion.questionType !== "REORDER" ? youDead : false),
-      nextQuestion: (currentQuestion.questionType !== "REORDER" ? nextQuestion : 0),
-      popupData: (currentQuestion.questionType !== "REORDER" ? popupDataMessage : "We dont have time for this!!"),
+      dead: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].dead : false),
+      nextQuestion: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].nextQuestion : 0),
+      popupData: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].message : "We dont have time for this!!"),
     });
 
   }
