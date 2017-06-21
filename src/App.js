@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <WelcomeComponent />
-        <EndScreen />
+        {/*<EndScreen />*/}
         <div className="container">
             <QuestionsWrapper data={questionsData} />
         </div>

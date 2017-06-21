@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "firebase": "^4.1.2",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-drag-and-drop": "^2.4.0",
     "react-player": "^0.18.0",
     "react-simple-popover": "^0.2.0",

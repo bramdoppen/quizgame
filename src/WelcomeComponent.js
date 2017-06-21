@@ -43,6 +43,7 @@ class Welcome extends Component {
         });
         this.setState({loggedin: true});
     }
+
     render() {
         const loggedin = this.state.loggedin;
         let welcomecomp = "";

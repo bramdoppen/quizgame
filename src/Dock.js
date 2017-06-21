@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DockItem from './DockItem';
+import deadicon from './img/icons/dead-icon.svg';
 
 class Dock extends Component {
 
@@ -78,21 +79,27 @@ class Dock extends Component {
 
         return (
             <div className="dock" >
-                <div
+                <div className="dock__item"
                     onClick={() => this.handleClick(this.props.interactieveData.babyCurrentQuestion)}>
                   <DockItem name="Patient Room 1"  status="Baby"         statusStyle={babywarning}  />
                 </div>
-                <div
+                <div className="dock__item"
                     onClick={() => this.handleClick(this.props.interactieveData.omaCurrentQuestion)}>
                   <DockItem name="Patient Room 2"  status="Grandma"      statusStyle={omawarning} />
                 </div>
-                <div
+                <div className="dock__item"
                     onClick={() => this.handleClick(this.props.interactieveData.kameleonCurrentQuestion)}>
                   <DockItem name="Patient Room 3"  status="Chameleon"      statusStyle={kameleonwarning} />
                 </div>
-                <DockItem name="MRI Scanner"     status={this.state.currentMriStatus + " waiting"}  statusStyle={this.state.currentMriStatus < 5 ? "status_ok" : "status_warning"} />
-                <DockItem name="CT Scanner"      status={this.state.currentCtStatus + " waiting"}  statusStyle={this.state.currentCtStatus < 5 ? "status_ok" : "status_warning"} />
-                <DockItem name="Lab"             status={this.state.labWaitingTime + "min"}  statusStyle={this.state.labWaitingTime < 4 ? "status_ok" : "status_warning"} />
+                <div className="dock__item">
+                    <DockItem name="MRI Scanner"     status={this.state.currentMriStatus + " waiting"}  statusStyle={this.state.currentMriStatus < 5 ? "status_ok" : "status_warning"} />
+                </div>
+                <div className="dock__item">
+                    <DockItem name="CT Scanner"      status={this.state.currentCtStatus + " waiting"}  statusStyle={this.state.currentCtStatus < 5 ? "status_ok" : "status_warning"} />
+                </div>
+                <div className="dock__item">
+                    <DockItem name="Lab"             status={this.state.labWaitingTime + "min"}  statusStyle={this.state.labWaitingTime < 4 ? "status_ok" : "status_warning"} />
+                </div>
             </div>
         );
     }

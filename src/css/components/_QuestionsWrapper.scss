@@ -1,9 +1,7 @@
 $responsive-size: 960px;
 
 .QuestionsWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include displayFlex(row, center);
   height: calc(100vh - 64px);
 
   @media (max-width: $responsive-size) {
