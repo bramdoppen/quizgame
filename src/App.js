@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './css/main.css';
 
+import Navbar from "./Navbar";
 import QuestionsWrapper from "./QuestionsWrapper.js";
 import EndScreen from "./EndScreen";
 import Welcome from "./WelcomeComponent";

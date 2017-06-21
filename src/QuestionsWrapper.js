@@ -5,6 +5,25 @@ import Dock from "./Dock";
 import Navbar from './Navbar';
 import NoteHistorySwitcher from './NoteHistorySwitcher';
 import Sound from 'react-sound';
+import DataVerwerker from './DataVerwerker';
+
+let interactieveData = {
+  omaCurrentQuestion: 1,
+  omaUrgentie: 0,
+  omaAfgerond: false,
+  omaOverleden: false,
+
+  babyCurrentQuestion: 11,
+  babyUrgentie: 0,
+  babyAfgerond: false,
+  babyOverleden: false,
+
+  kameleonCurrentQuestion: 18,
+  kameleonUrgentie: 0,
+  kameleonAfgerond: false,
+  kameleonOverleden: false
+};
+
 class QuestionsWrapper extends Component {
   static get propTypes() {
     return {
@@ -33,6 +52,8 @@ class QuestionsWrapper extends Component {
     this.musicPause = this.musicPause.bind(this);
     this.handleUserAnswer = this.handleUserAnswer.bind(this);
     this.closePopup = this.closePopup.bind(this);
+    this.receiveDataVerwerking = this.receiveDataVerwerking.bind(this);
+    this.veranderCurrentQuestion = this.veranderCurrentQuestion.bind(this);
   }
 
   handleUserAnswer(answerNumber) {
@@ -49,6 +70,14 @@ class QuestionsWrapper extends Component {
       popupData: (currentQuestion.questionType !== "REORDER" ? this.props.data[this.state.currentQuestion].answers[answerNumber].message : "Well, this was predictable. Cutie pie has a brain tumor."),
     });
 
+  }
+
+  receiveDataVerwerking(data){
+    interactieveData = data;
+  }
+
+  veranderCurrentQuestion(question){
+    this.setState({currentQuestion: question});
   }
 
   closePopup() {
@@ -72,7 +101,8 @@ class QuestionsWrapper extends Component {
   render() {
     return (
       <div className={'QuestionsWrapper ' + (this.state.backgroundClass)  }>
-          <NoteHistorySwitcher PopupData={this.state.popupData} />
+        <DataVerwerker currentQuestion={this.state.currentQuestion} receiveDataVerwerking={this.receiveDataVerwerking} />
+        <NoteHistorySwitcher PopupData={this.state.popupData} />
         <Sound
             url="/sound/background.mp3"
             playStatus={this.state.playStatus}
@@ -92,8 +122,11 @@ class QuestionsWrapper extends Component {
           PlayDeadSound={this.state.dead}
           PopupData={this.state.popupData}
         />
-      <Dock />
-    </div>
+        <Dock
+          veranderCurrentQuestion={this.veranderCurrentQuestion}
+          interactieveData={interactieveData}
+        />
+      </div>
     );
   }
 }
