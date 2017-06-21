@@ -30,9 +30,6 @@ class NotesList extends Component {
     };
 
     addNote = () => {
-        // It would also be possible to write this in like `this.state.notes.push` and then
-        // `this.setState({notes: this.state.notes})` to commit.
-
         let noteCounter = this.state.notes.length;
 
         this.setState({
@@ -100,7 +97,7 @@ class NotesList extends Component {
                 )}
                 </ul>
 
-                <button onClick={this.addNote}>Nieuwe notitie</button>
+                <p onClick={this.addNote}>Nieuwe notitie</p>
 
             </div>
         );

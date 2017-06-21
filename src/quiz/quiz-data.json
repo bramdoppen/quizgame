@@ -70,11 +70,11 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "I would solve the main problem first.",
     "background": "patient"
   },
   {
-    "question": "3: You sent the lady home, but a week after, she returns, with the same complaints. ",
+    "question": "You sent the lady home, but a week after, she returns, with the same complaints. ",
     "answers": [
       {
         "choice": "Oh come on, really? Send the whining lady home AGAIN",
@@ -94,11 +94,11 @@
       }
     ],
     "questionType": "DD",
-    "tip": "",
+    "tip": "Perhaps the problem is with what she has eaten?",
     "background": "lobby"
   },
   {
-    "question": "4: So if it isn't a heart attack, what is it?",
+    "question": "So if it isn't a heart attack, what is it?",
     "answers": [
       {
         "choice": "Admit old lady to have her tested more thoroughly later on and take a break, you've earned some rest, right? ",
@@ -112,11 +112,11 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "What are you going to do now?",
     "background": "patient"
   },
   {
-    "question": "extra 5: So if it isn't a heart attack, what is it?",
+    "question": "So if it isn't a heart attack, what is it?",
     "answers": [
       {
         "choice": "Okay, so no break, admit old lady and run some more tests on her.",
@@ -125,11 +125,11 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "Keep calm and breath!",
     "background": "patient"
   },
   {
-    "question": "extra 6: Old lady is admitted and ready for some more testing. How do you want to proceed?",
+    "question": "Old lady is admitted and ready for some more testing. How do you want to proceed?",
     "answers": [
       {
         "choice": "Ask her some more questions to get a full history",
@@ -143,11 +143,11 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "An MRI looks promising..",
     "background": "patient"
   },
   {
-    "question": "extra 7: What should you ask her?",
+    "question": "What should you ask her?",
     "answers": [
       {
         "choice": "Ask her when she got laid for the last time (this might be really interesting, I mean, how often do you get to ask your own grandma this?)",
@@ -161,11 +161,11 @@
       }
     ],
     "questionType": "DD",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "Well the first questions looks interesting doesn't it? But focus on the main problem.",
     "background": "patient"
   },
   {
-    "question": "extra 8: The MRI shows, well, not much really. If you really look closely...there might be something going on with her spleen, it looks a bit enlarged.",
+    "question": "The MRI shows, well, not much really. If you really look closely...there might be something going on with her spleen, it looks a bit enlarged.",
     "answers": [
       {
         "choice": "Open her up, surgery is the way to go here.",
@@ -188,7 +188,7 @@
     "background": "mri"
   },
   {
-    "question": "extra 9: During surgery you look at the spleen, which is mildly enlarged. You decide to take it out, just to be sure.",
+    "question": "During surgery you look at the spleen, which is mildly enlarged. You decide to take it out, just to be sure.",
     "answers": [
       {
         "choice": "Without a spleen, she can live perfectly fine. Sending the lady home after recovery, and hopefully her high blood pressure will resolve itself.",
@@ -201,7 +201,7 @@
     "background": "operation"
   },
   {
-    "question": "extra 10: Old Grandma Lady told you her grandson brought back a bunch of Dutch licorice from his trip to Holland",
+    "question": "Old Grandma Lady told you her grandson brought back a bunch of Dutch licorice from his trip to Holland",
     "answers": [
       {
         "choice": "That explains the high blood pressure. She probably just ate way too much.",
@@ -215,7 +215,7 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "What a waste of time!",
     "background": "patient"
   },
 
@@ -228,16 +228,8 @@
 
 
 
-
-
-
-
-
-
-
-
   {
-    "question": "11: This baby's blob looks weird.",
+    "question": "This baby's blob looks weird.",
     "answers": [
       {
         "choice": "Examine the baby",
@@ -255,7 +247,7 @@
     "background": "hospital"
   },
   {
-    "question": "12 How do you want to proceed? Choose an order in which to continue.",
+    "question": "How do you want to proceed? Choose an order in which to continue.",
     "answers": [
       {
         "choice": "Draw blood",
@@ -292,7 +284,7 @@
     "background": "bloed"
   },
   {
-    "question": "14: What to do with tumorbaby? Choose wisely and use the help function if you get scared.",
+    "question": "What to do with tumorbaby? Choose wisely and use the help function if you get scared.",
     "answers": [
       {
         "choice": "Risky operation with a 25% chance of complete recovery",
@@ -316,7 +308,7 @@
     "background": "operation"
   },
   {
-    "question": "15: During the operation you are being paged by another doctor. She really needs your input on another case",
+    "question": "During the operation you are being paged by another doctor. She really needs your input on another case",
     "answers": [
       {
         "choice": "You can't leave the baby open on the table. Keep operating.",
@@ -334,7 +326,7 @@
     "background": "operation"
   },
   {
-    "question": "16: While the baby is being treated with chemo, you should probably check on your other patients",
+    "question": "While the baby is being treated with chemo, you should probably check on your other patients",
     "answers": [
       {
         "choice": "img/kameleonkind.jpg",
@@ -352,7 +344,7 @@
     "background": "multiple"
   },
   {
-    "question": "17: Wow, you are so good at this. You kept tumorbaby alive and now he's just baby, without the tumor!",
+    "question": "Wow, you are so good at this. You kept tumorbaby alive and now he's just baby, without the tumor!",
     "answers": [
       {
         "choice": "I'm the king of surgery. Okay, moving on. I want to do more of this heroic stuff.",
@@ -374,18 +366,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
   {
-    "question": "18: How could you help the kid with his chameleon?",
+    "question": "How could you help the kid with his chameleon?",
     "answers": [
       {
         "choice": "Send them to a vet, this place is for sick people, not animals",
@@ -404,11 +386,11 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "What is the problem here? Like what do you think..",
     "background": "lobby"
   },
   {
-    "question": "19: A week later, you receive message that the child has tragically passed away, due to internal injury's that you didn't find, but the good news: the chameleon survived",
+    "question": "A week later, you receive message that the child has tragically passed away, due to internal injury's that you didn't find, but the good news: the chameleon survived",
     "answers": [
       {
         "choice": "Feel bummed for a bit and then you check on your other patient(s)",
@@ -423,7 +405,7 @@
     "dead": true
   },
   {
-    "question": "20: You took a quick look at the bruises, they are blue and orange-colored.",
+    "question": "You took a quick look at the bruises, they are blue and orange-colored.",
     "answers": [
       {
         "choice": "It will heal just fine. Put a band aid on the bigger ones and let him go home",
@@ -437,11 +419,11 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?",
+    "tip": "Are you sure you don't want to look again?",
     "background": "patient"
   },
   {
-    "question": "21: He looks pretty dead to you (the chameleon, I mean. Sorry, didn't want to give you a heart attack.)",
+    "question": "He looks pretty dead to you (the chameleon, I mean. Sorry, didn't want to give you a heart attack.)",
     "answers": [
       {
         "choice": "Tell the kid the pet is dead and go help another patient, cause you have better things to do.",
@@ -459,7 +441,7 @@
     "background": "patient"
   },
   {
-    "question": "22: Fighting could mean internal injuries. You know, the ones you don't see. How are you going to check that?",
+    "question": "Fighting could mean internal injuries. You know, the ones you don't see. How are you going to check that?",
     "answers": [
       {
         "choice": "img/mriscan.png",
@@ -477,7 +459,7 @@
     "background": "patient"
   },
   {
-    "question": "23: The test results show free fluid in the kid's belly.",
+    "question": "The test results show free fluid in the kid's belly.",
     "answers": [
       {
         "choice": "A minor procedure means less risk of infection. We'll make a small cut and drain the fluid.",
@@ -491,11 +473,11 @@
       }
     ],
     "questionType": "DD",
-    "tip": "",
+    "tip": "Remember even death has a heart.",
     "background": "operation"
   },
   {
-    "question": "24: The procedure went fine, but the kid is complaining of severe abdominal pain.",
+    "question": "The procedure went fine, but the kid is complaining of severe abdominal pain.",
     "answers": [
       {
         "choice": "He just had a procedure done, give it some time, hand him some painkillers and his chameleon to comfort him.",
@@ -509,11 +491,11 @@
       }
     ],
     "questionType": "MC",
-    "tip": "",
+    "tip": "You can do it!",
     "background": "mri"
   },
   {
-    "question": "25: In surgery, you find out that the child has a huge leak caused by the fight. You repair it quickly and just in time. ",
+    "question": "In surgery, you find out that the child has a huge leak caused by the fight. You repair it quickly and just in time. ",
     "answers": [
       {
         "choice": "Whew, kid's saved. Put him back in his room to recover.",
@@ -522,11 +504,11 @@
       }
     ],
     "questionType": "MC",
-    "tip": "",
+    "tip": "Take a coffee you deserve it.",
     "background": "operation"
   },
   {
-  "question": "26: A week later, you receive message that the child has tragically passed away, due to the leak in his belly that you didn't fix with surgery. But there's good news too: the chameleon survived",
+  "question": "A week later, you receive message that the child has tragically passed away, due to the leak in his belly that you didn't fix with surgery. But there's good news too: the chameleon survived",
   "answers": [
     {
       "choice": "Feel ashamed for a bit and then you check on your other patient(s)",
@@ -539,6 +521,5 @@
   "tip": "You suck at this game.",
   "background": "bloed"
   }
-
 
 ]

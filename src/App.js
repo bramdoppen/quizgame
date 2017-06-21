@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/main.css';
 
 import QuestionsWrapper from "./QuestionsWrapper.js";
+import EndScreen from "./EndScreen";
 import WelcomeComponent from "./WelcomeComponent";
 
 //json
@@ -18,7 +19,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <WelcomeComponent />
+        {/*<WelcomeComponent />*/}
+        {/*<EndScreen />*/}
         <div className="container">
             <QuestionsWrapper data={questionsData} />
         </div>

@@ -1,7 +1,5 @@
 $responsive-size: 960px;
 
-$responsive-size: 960px;
-
 .notesTimelineSwitch{
   flex: none;
   width: 300px;
@@ -9,7 +7,6 @@ $responsive-size: 960px;
   padding: 0 16px 16px 16px;
   background-color: #fff;
   color: #3498DB;
-  overflow: scroll;
   margin: 50vh 0 auto 0;
   border-radius: 0 25px 25px 0;
   box-shadow:0px 2px 33px rgba(0,0,0,.19);
@@ -20,6 +17,7 @@ $responsive-size: 960px;
     -ms-transform: translate(0,-50%);
     -o-transform: translate(0,-50%);
     transform: translate(0,-50%);
+  overflow: scroll;
 }
 
 
@@ -80,10 +78,38 @@ $responsive-size: 960px;
     height: 20px;
 
     &:hover{
-      background-color: #fff;
+      background-color: #555;
+      color: #FFF;
       cursor: pointer;
     }
+  }
 
+  .editingNote{
+    padding: 15px 45px;
+    border-radius: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid #F1F1F1;
+    color: #3498DB;
+  }
+
+  p{
+    padding: 15px 45px;
+    border-radius: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #F1F1F1;
+    color: #0A619C;
+    display: inline-block;
+
+    &:hover{
+      background-color: #555;
+      color: #FFF;
+    }
   }
 }
 
