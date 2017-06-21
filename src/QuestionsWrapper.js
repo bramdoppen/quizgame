@@ -41,11 +41,11 @@ class QuestionsWrapper extends Component {
       questionType: questionType,
       answerGiven: false,
       answerNummer: 0,
-      answer: "meep",
+      answer: "",
       nextQuestion: 0,
-      popupData:"",
-      dead: true,
-      playStatus: Sound.status.PAUSE,
+      popupData: "",
+      dead: false,
+      playStatus: Sound.status.PLAYING,
       backgroundClass: 'lobby',
     };
 
@@ -102,7 +102,7 @@ class QuestionsWrapper extends Component {
     return (
       <div className={'QuestionsWrapper ' + (this.state.backgroundClass)  }>
         <DataVerwerker currentQuestion={this.state.currentQuestion} receiveDataVerwerking={this.receiveDataVerwerking} />
-        <NoteHistorySwitcher PopupData={this.state.popupData} />
+          <NoteHistorySwitcher PopupData={this.state.popupData} />
         <Sound
             url="/sound/background.mp3"
             playStatus={this.state.playStatus}
@@ -111,8 +111,8 @@ class QuestionsWrapper extends Component {
             onFinishedPlaying={this.handleSongFinishedPlaying}
         />
         <Navbar
-            answerClicked={this.musicPause}
-            playIcon={this.state.playStatus === Sound.status.PLAYING ? "Off" : "On"}
+          answerClicked={this.musicPause}
+          playIcon={this.state.playStatus === Sound.status.PLAYING ? "Off" : "On"}
         />
         <Questions
           data={this.props.data[this.state.currentQuestion]}
