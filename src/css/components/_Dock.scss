@@ -21,14 +21,11 @@
     position:relative;
     padding-right: 23px;
     box-sizing: initial;
-    margin-right: 21px;
+    margin-right: 17px;
     > .dock__item {
       top: 7px;
     }
-    &:last-child {
-      margin-right:0;
-      padding-right:0;
-    }
+
 
     p:nth-of-type(1) {
       font-weight:600;
