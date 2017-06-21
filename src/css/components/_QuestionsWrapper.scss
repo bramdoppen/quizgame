@@ -12,6 +12,44 @@ $responsive-size: 960px;
 }
 
 .bloed {
-  background-image:url("../img/ziekenhuis/bloed2.png");
+  background-image:url("../img/ziekenhuis/bloed.jpg");
+  background-size:cover;
   background-position: center;
 }
+
+.hospital {
+  background-image:url("../img/ziekenhuis/hospital-er.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.lobby {
+  background-image:url("../img/ziekenhuis/lobby.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.mri {
+  background-image:url("../img/ziekenhuis/mri-scan.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.multiple {
+  background-image:url("../img/ziekenhuis/multiple-patients-room.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.operation {
+  background-image:url("../img/ziekenhuis/operation-room.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.patient {
+  background-image:url("../img/ziekenhuis/patientroom.jpg");
+  background-size:cover;
+  background-position: center;
+}
+

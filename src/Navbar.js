@@ -3,8 +3,6 @@ import menuPlaatje from './img/menu-options.png';
 import soundOn from './img/icons/sound-on.svg';
 import soundOff from './img/icons/sound-off.svg';
 import PropTypes from 'prop-types';
-// https://facebook.github.io/react/docs/handling-events.html
-// https://codepen.io/danbuda/post/a-react-navbar-component
 
 class Navbar extends Component {
     static get propTypes() {
@@ -16,15 +14,6 @@ class Navbar extends Component {
     handleClick(event) {
         this.props.answerClicked();
     }
-
-    // menuutje(){
-    //     let menu = document.querySelector('.menu-open');
-    //     if (menu.style.display === 'block') {
-    //         menu.style.display = 'none';
-    //     } else {
-    //         menu.style.display = 'block';
-    //     }
-    // }
 
     render() {
         const handleClick = this.handleClick.bind(this);
@@ -38,6 +27,6 @@ class Navbar extends Component {
         );
     }
 
-} // einde component
+}
 
 export default Navbar;

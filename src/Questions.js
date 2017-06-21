@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Popup from './Popup.js';
 
+import Popup from './Popup.js';
 import MultipleChoiceQuestion from './MultipleChoiceQuestion';
 import Afbeeldingen from "./Afbeeldingen.js";
 import DragDrop from "./DragDrop.js";

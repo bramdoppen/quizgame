@@ -19,7 +19,8 @@
       }
     ],
     "questionType": "IMG",
-    "tip": "Just click an image, it's not that hard now, is it?"
+    "tip": "Just click an image, it's not that hard now, is it?",
+    "background": "lobby"
   },
   {
     "question": "Looks like the old lady has some swollen ankles, and an irregular heartbeat. She also complains of being tired.",
@@ -46,7 +47,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "patient"
   },
   {
     "question": "So that research didn't really work out. Maybe you should try something else.",
@@ -68,7 +70,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "patient"
   },
   {
     "question": "3: You sent the lady home, but a week after, she returns, with the same complaints. ",
@@ -91,7 +94,8 @@
       }
     ],
     "questionType": "DD",
-    "tip": ""
+    "tip": "",
+    "background": "lobby"
   },
   {
     "question": "4: So if it isn't a heart attack, what is it?",
@@ -108,7 +112,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "patient"
   },
   {
     "question": "extra 5: So if it isn't a heart attack, what is it?",
@@ -120,7 +125,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "patient"
   },
   {
     "question": "extra 6: Old lady is admitted and ready for some more testing. How do you want to proceed?",
@@ -137,7 +143,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "patient"
   },
   {
     "question": "extra 7: What should you ask her?",
@@ -154,7 +161,8 @@
       }
     ],
     "questionType": "DD",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "patient"
   },
   {
     "question": "extra 8: The MRI shows, well, not much really. If you really look closely...there might be something going on with her spleen, it looks a bit enlarged.",
@@ -176,7 +184,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "mri"
   },
   {
     "question": "extra 9: During surgery you look at the spleen, which is mildly enlarged. You decide to take it out, just to be sure.",
@@ -188,7 +197,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "operation"
   },
   {
     "question": "extra 10: Old Grandma Lady told you her grandson brought back a bunch of Dutch licorice from his trip to Holland",
@@ -205,7 +215,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "patient"
   },
 
 
@@ -240,7 +251,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Uhm, you can also do nothing and let him die... "
+    "tip": "Uhm, you can also do nothing and let him die... ",
+    "background": "hospital"
   },
   {
     "question": "12 How do you want to proceed? Choose an order in which to continue.",
@@ -261,8 +273,9 @@
         "message": "Well, this was predictable. Cutie pie has a brain tumor."
       }
     ],
-    "questionType": "DD",
-    "tip": "Decide what's the right order. An echo is often promising."
+    "questionType": "REORDER",
+    "tip": "Decide what's the right order. An echo is often promising.",
+    "background": "hospital"
   },
   {
     "question": "Choosing not to examine the baby resulted in his death.",
@@ -275,7 +288,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Try starting over"
+    "tip": "Try starting over",
+    "background": "bloed"
   },
   {
     "question": "14: What to do with tumorbaby? Choose wisely and use the help function if you get scared.",
@@ -298,7 +312,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Hmm, a brain tumor .. surgery is risky but not impossible. A brain tumor is usually treated by chemotherapy. The chance of a complete recovery is 25% by surgery"
+    "tip": "Hmm, a brain tumor .. surgery is risky but not impossible. A brain tumor is usually treated by chemotherapy. The chance of a complete recovery is 25% by surgery",
+    "background": "operation"
   },
   {
     "question": "15: During the operation you are being paged by another doctor. She really needs your input on another case",
@@ -315,7 +330,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "You're screwed either way."
+    "tip": "You're screwed either way.",
+    "background": "operation"
   },
   {
     "question": "16: While the baby is being treated with chemo, you should probably check on your other patients",
@@ -332,7 +348,8 @@
       }
     ],
     "questionType": "IMG",
-    "tip": "Choose who to check on"
+    "tip": "Choose who to check on",
+    "background": "multiple"
   },
   {
     "question": "17: Wow, you are so good at this. You kept tumorbaby alive and now he's just baby, without the tumor!",
@@ -344,7 +361,9 @@
       }
     ],
     "questionType": "MC",
-    "tip": "No choice really."
+    "tip": "No choice really.",
+    "background": "lobby"
+
   },
 
 
@@ -385,7 +404,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "lobby"
   },
   {
     "question": "19: A week later, you receive message that the child has tragically passed away, due to internal injury's that you didn't find, but the good news: the chameleon survived",
@@ -398,7 +418,9 @@
       }
     ],
     "questionType": "MC",
-    "tip": "I've got nothing to say"
+    "tip": "I've got nothing to say",
+    "background": "bloed",
+    "dead": true
   },
   {
     "question": "20: You took a quick look at the bruises, they are blue and orange-colored.",
@@ -415,7 +437,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "Just choose something, it's not that hard now, is it?"
+    "tip": "Just choose something, it's not that hard now, is it?",
+    "background": "patient"
   },
   {
     "question": "21: He looks pretty dead to you (the chameleon, I mean. Sorry, didn't want to give you a heart attack.)",
@@ -432,7 +455,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": "I've got nothing to say"
+    "tip": "I've got nothing to say",
+    "background": "patient"
   },
   {
     "question": "22: Fighting could mean internal injuries. You know, the ones you don't see. How are you going to check that?",
@@ -449,7 +473,8 @@
       }
     ],
     "questionType": "IMG",
-    "tip": "Choose between an MRI scan or an echo."
+    "tip": "Choose between an MRI scan or an echo.",
+    "background": "patient"
   },
   {
     "question": "23: The test results show free fluid in the kid's belly.",
@@ -466,7 +491,8 @@
       }
     ],
     "questionType": "DD",
-    "tip": ""
+    "tip": "",
+    "background": "operation"
   },
   {
     "question": "24: The procedure went fine, but the kid is complaining of severe abdominal pain.",
@@ -483,7 +509,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": ""
+    "tip": "",
+    "background": "mri"
   },
   {
     "question": "25: In surgery, you find out that the child has a huge leak caused by the fight. You repair it quickly and just in time. ",
@@ -495,7 +522,8 @@
       }
     ],
     "questionType": "MC",
-    "tip": ""
+    "tip": "",
+    "background": "operation"
   },
   {
   "question": "26: A week later, you receive message that the child has tragically passed away, due to the leak in his belly that you didn't fix with surgery. But there's good news too: the chameleon survived",
@@ -508,7 +536,8 @@
     }
   ],
   "questionType": "MC",
-  "tip": "You suck at this game."
+  "tip": "You suck at this game.",
+  "background": "bloed"
   }
 
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './css/main.css';
 
-import Navbar from "./Navbar";
 import QuestionsWrapper from "./QuestionsWrapper.js";
 import Welcome from "./WelcomeComponent";
 // import SortableComponent from './Reorder';
@@ -16,10 +15,8 @@ class App extends Component {
 
   render() {
     return (
-
       <div className="App">
-        {/*<Welcome />*/}
-        <Navbar />
+        <Welcome />
         <div className="container">
             <QuestionsWrapper data={questionsData} />
         </div>
