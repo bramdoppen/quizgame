@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Questions from './Questions';
 import Dock from "./Dock";
-import Tijdlijn from "./Tijdlijn";
 import Sound from 'react-sound';
 import Navbar from './Navbar';
+import Switcher from './NoteHistorySwitcher';
 
 class QuestionsWrapper extends Component {
   static get propTypes() {
@@ -63,14 +63,14 @@ class QuestionsWrapper extends Component {
 
   musicPause() {
     this.setState({
-      playStatus: (this.state.playStatus === Sound.status.PLAYING ? Sound.status.PAUSED : Sound.status.PLAYING )
+      playStatus: (this.state.playStatus === Sound.status.PLAYING ? Sound.status.PAUSE : Sound.status.PLAYING )
     });
   }
 
   render() {
     return (
       <div className={'QuestionsWrapper' + (this.state.dead ? ' bloed' : '')}>
-        <Tijdlijn PopupData={this.state.popupData}/>
+          <Switcher PopupData={this.state.popupData} />
         <Sound
             url="/sound/background.mp3"
             playStatus={this.state.playStatus}
@@ -80,6 +80,7 @@ class QuestionsWrapper extends Component {
         />
         <Navbar
             answerClicked={this.musicPause}
+            playIcon={this.state.playStatus === Sound.status.PLAYING ? "Off" : "On"}
         />
         <Questions
           data={this.props.data[this.state.currentQuestion]}

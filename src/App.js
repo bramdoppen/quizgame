@@ -14,16 +14,11 @@ class App extends Component {
         super(props);
     }
 
-
-    geefDoor() {
-        let user = "";
-    }
-
   render() {
     return (
 
       <div className="App">
-        <Welcome name={this.geefDoor}/>
+        {/*<Welcome />*/}
         <Navbar />
         <div className="container">
             <QuestionsWrapper data={questionsData} />
