@@ -3,17 +3,17 @@
     "question": "Three people are entering the Emergency Room. You're the only one on call. Who will get your attention?",
     "answers": [
       {
-        "choice": "img/tumorbabyy.jpg",
+        "choice": "img/tumorbaby.jpg",
         "nextQuestion": 11,
         "message": "Two folks came in with their three month old baby boy. He has this big blob on the side of his head."
       },
       {
-        "choice": "img/dropvrouw33.jpg",
+        "choice": "img/dropvrouw3.jpg",
         "nextQuestion": 1,
         "message": "So this woman, who looks like she has only a few years to go, obviously still deserves your attention. Alrighty. Let's see how you could help her."
       },
       {
-        "choice": "img/kameleonkindd.jpg",
+        "choice": "img/kameleonkind.jpg",
         "nextQuestion": 18,
         "message": "A kid came in by himself, he looks a bit bruised up but he is extremely worried about his chameleon. The poor thing hasn't moved in quite a while. Can't believe someone let a four legged beast in here."
       }
