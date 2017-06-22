@@ -48,7 +48,7 @@ class Dock extends Component {
     render() {
         let babywarning;
 
-        if(this.props.interactieveData.babyUrgentie >= 5){
+        if(this.props.interactieveData.babyOverleden){
           babywarning = "status_ok dead"
         } else if(this.props.interactieveData.babyUrgentie >= 2){
           babywarning = "status_warning flatline"
@@ -58,7 +58,7 @@ class Dock extends Component {
 
         let omawarning;
 
-        if(this.props.interactieveData.omaUrgentie >= 5){
+        if(this.props.interactieveData.omaOverleden){
           omawarning = "status_ok dead"
         } else if(this.props.interactieveData.omaUrgentie >= 3){
           omawarning = "status_warning flatline"
@@ -68,7 +68,7 @@ class Dock extends Component {
 
         let kameleonwarning;
 
-        if(this.props.interactieveData.kameleonUrgentie >= 5){
+        if(this.props.interactieveData.kameleonOverleden){
           kameleonwarning = "status_ok dead"
         } else if(this.props.interactieveData.kameleonUrgentie >= 2){
           kameleonwarning = "status_warning flatline"

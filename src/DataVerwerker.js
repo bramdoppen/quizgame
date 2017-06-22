@@ -106,11 +106,22 @@ class DataVerwerker extends Component {
       interactieveData.babyAfgerond = true;
     }
 
+    if(interactieveData.babyAfgerond){
+      interactieveData.babyUrgentie = 0;
+    }
+    if(interactieveData.omaAfgerond){
+      interactieveData.omaUrgentie = 0;
+    }
+    if(interactieveData.kameleonAfgerond){
+      interactieveData.kameleonUrgentie = 0;
+    }
+
     this.props.receiveDataVerwerking(interactieveData);
 
   }
 
   render() {
+    interactieveData = this.props.data;
     this.handleDataVerwerking()
     return(
         <span></span>

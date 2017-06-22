@@ -62,6 +62,9 @@ class QuestionsWrapper extends Component {
     const currentQuestion = this.props.data[currentNumberQuestion];
     const givenAnswers = currentQuestion.answers[answerNumber];
 
+
+
+
     this.setState({
       answerGiven: true,
       answer: givenAnswers,
@@ -109,9 +112,23 @@ class QuestionsWrapper extends Component {
   }
 
   render() {
+
+    if(this.state.dead && this.state.currentQuestion < 11){
+      interactieveData.omaOverleden = true;
+      interactieveData.omaAfgerond = true;
+    }
+    if(this.state.dead && this.state.currentQuestion >= 11 && this.state.currentQuestion <= 17){
+      interactieveData.babyOverleden = true;
+      interactieveData.babyAfgerond = true;
+    }
+    if(this.state.dead && this.state.currentQuestion > 17){
+      interactieveData.kameleonOverleden = true;
+      interactieveData.kameleonAfgerond = true;
+    }
+
     return (
       <div className={'QuestionsWrapper ' + (this.state.backgroundClass)  }>
-        <DataVerwerker currentQuestion={this.state.currentQuestion} receiveDataVerwerking={this.receiveDataVerwerking} />
+        <DataVerwerker currentQuestion={this.state.currentQuestion} receiveDataVerwerking={this.receiveDataVerwerking} data={interactieveData} />
           <NoteHistorySwitcher PopupData={this.state.popupData} />
         <Sound
             url="/sound/backgroundd.mp3"
