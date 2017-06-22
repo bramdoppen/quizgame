@@ -131,7 +131,7 @@ class QuestionsWrapper extends Component {
         <DataVerwerker currentQuestion={this.state.currentQuestion} receiveDataVerwerking={this.receiveDataVerwerking} data={interactieveData} />
           <NoteHistorySwitcher PopupData={this.state.popupData} />
         <Sound
-            url="/sound/backgroundd.mp3"
+            url="/sound/background.mp3"
             playStatus={this.state.playStatus}
             onLoading={this.handleSongLoading}
             onPlaying={this.handleSongPlaying}
