@@ -59,7 +59,7 @@ class EndScreen extends Component {
                                   <p className={kameleon}>{kameleonName}</p>
                               </div>
                           </div>
-                          <div className="nurse-image"><img src={nurseimg}/></div>
+                          <div className="nurse-image"><img alt="Nurse" src={nurseimg}/></div>
                       </div>
                   </div>
                   ;

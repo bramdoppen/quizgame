@@ -3,7 +3,7 @@ import nurseimg from './img/icons/nurse.svg';
 import googlelogo from './img/logogoogle.png';
 import * as firebase from 'firebase';
 
-const config = {    
+const config = {
     apiKey: "AIzaSyA1e7xGq9OLai-fsgGmD03V3e0mT0gl6SY",
     authDomain: "quizgame-63308.firebaseapp.com",
     databaseURL: "https://quizgame-63308.firebaseio.com",
@@ -56,10 +56,10 @@ class Welcome extends Component {
         else {
             welcomecomp = <div id="WelcomeComponent" className="WelcomeComponent">
                 <div className="WelcomeComponent__inner"><h1>Welcome on your first day</h1><h3>Keep your head cool and your patients alive!</h3>
-                    <div className="googleSigninButton" onClick={this.handleLogin}><img className="logo"
+                    <div className="googleSigninButton" onClick={this.handleLogin}><img className="logo" alt="Google Logo"
                                                                                         src={googlelogo}/><span>Login with Google</span>
                     </div>
-                    <div className="nurse-image"><img src={nurseimg}/></div>
+                    <div className="nurse-image"><img src={nurseimg} alt="Nurse" /></div>
                 </div>
             </div>;
         }

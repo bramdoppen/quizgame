@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/main.css';
 
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import QuestionsWrapper from "./QuestionsWrapper.js";
 import EndScreen from "./EndScreen";
 import WelcomeComponent from "./WelcomeComponent";
@@ -9,7 +9,7 @@ import WelcomeComponent from "./WelcomeComponent";
 //json
 import questionsData from './quiz/quiz-data.json';
 
-let einde = false;
+// let einde = false;
 
 class App extends Component {
     constructor(props) {
@@ -23,7 +23,6 @@ class App extends Component {
     }
 
     eindeTrigger(data){
-      console.log("ik doe ook iets")
       this.setState({einde: true, eindData: data});
     }
 

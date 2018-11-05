@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import menuPlaatje from './img/menu-options.png';
+// import menuPlaatje from './img/menu-options.png';
 import soundOn from './img/icons/sound-on.svg';
 import soundOff from './img/icons/sound-off.svg';
 import PropTypes from 'prop-types';
@@ -21,7 +21,7 @@ class Navbar extends Component {
         return (
             <nav className="Navbar">
                 <button onClick={handleClick}>
-                    <img className="sound" src={this.props.playIcon === "On" ? soundOff : soundOn} />
+                    <img className="sound" alt="Sound" src={this.props.playIcon === "On" ? soundOff : soundOn} />
                 </button>
             </nav>
         );

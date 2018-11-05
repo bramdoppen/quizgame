@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import DockItem from './DockItem';
-import deadicon from './img/icons/dead-icon.svg';
 
 class Dock extends Component {
 

@@ -46,7 +46,6 @@ class DataVerwerker extends Component {
   handleDataVerwerking(a) {
     const currentQuestion = this.props.currentQuestion
 
-    console.log(currentQuestion)
     if( currentQuestion < 11
         && currentQuestion >= 1
         && currentQuestion !== oldCurrentQuestion
