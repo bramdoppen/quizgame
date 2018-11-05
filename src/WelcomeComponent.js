@@ -3,11 +3,13 @@ import nurseimg from './img/icons/nurse.svg';
 import googlelogo from './img/logogoogle.png';
 import * as firebase from 'firebase';
 
-const config = {
-    apiKey: "AIzaSyCoK-sL-0bYkC0Pzm7ph3gb6do0bqrhW18",
-    authDomain: "quizgame-ee661.firebaseapp.com",
-    databaseURL: "https://quizgame-ee661.firebaseio.com",
-    storageBucket: "quizgame-ee661.appspot.com",
+const config = {    
+    apiKey: "AIzaSyA1e7xGq9OLai-fsgGmD03V3e0mT0gl6SY",
+    authDomain: "quizgame-63308.firebaseapp.com",
+    databaseURL: "https://quizgame-63308.firebaseio.com",
+    projectId: "quizgame-63308",
+    storageBucket: "quizgame-63308.appspot.com",
+    messagingSenderId: "740045311857"
 };
 
 const database = firebase
